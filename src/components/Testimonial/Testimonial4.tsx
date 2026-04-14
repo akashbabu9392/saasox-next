@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Slider from "@/app/_client/SlickSlider";
+import type { SlickSliderRef } from "@/app/_client/SlickSlider";
 
 const Testimonial4 = () => {
 
@@ -36,7 +37,7 @@ const Testimonial4 = () => {
         ]
       };  
 
-      const sliderRef = useRef<any>(null);
+      const sliderRef = useRef<SlickSliderRef | null>(null);
 
       const next = () => {
         sliderRef.current?.slickNext();

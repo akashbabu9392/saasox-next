@@ -48,7 +48,7 @@ const Choose3 = () => {
                     </span>
                     <div className="cs_iconbox_info">
                       <h3 className="cs_fs_20 cs_semibold cs_mb_1">Fast & Easy</h3>
-                      <p className="mb-0">By attracting qualified the traffic and optimizing your website for conversions, we'll help you.</p>
+                      <p className="mb-0">By attracting qualified the traffic and optimizing your website for conversions, we&apos;ll help you.</p>
                     </div>
                   </div>
                 </div>

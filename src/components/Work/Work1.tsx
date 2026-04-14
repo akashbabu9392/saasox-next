@@ -13,7 +13,7 @@ const Work1 = () => {
                   <span>How It work</span>
                   <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
                 </div>
-                <h2 className="cs_section_title cs_fs_48 cs_semibold wow fadeInUp">Let's Utilize Optimum In Three Easy Actions.</h2>
+                <h2 className="cs_section_title cs_fs_48 cs_semibold wow fadeInUp">Let&apos;s Utilize Optimum In Three Easy Actions.</h2>
                 <p className="cs_card_desc cs_mb_22">All the generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
               </div>
               <div className="cs_process_thumbnail z-1">

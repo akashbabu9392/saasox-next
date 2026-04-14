@@ -4,6 +4,7 @@ import Slider from "@/app/_client/SlickSlider";
 import { useRef } from "react";
 import Link from "next/link";
 import { blogDb } from "@/db/blog";
+import type { SlickSliderRef } from "@/app/_client/SlickSlider";
 
 const Blog1 = () => {
 
@@ -38,7 +39,7 @@ const Blog1 = () => {
         ]
       };  
 
-      const sliderRef = useRef<any>(null);
+      const sliderRef = useRef<SlickSliderRef | null>(null);
 
       const next = () => {
         sliderRef.current?.slickNext();

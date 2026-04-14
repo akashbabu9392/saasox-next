@@ -1,8 +1,8 @@
 'use client';
 
-import dynamic from 'next/dynamic';
+import Slider from "react-slick";
 
-const SlickSlider = dynamic(() => import('react-slick'), { ssr: false }) as any;
+export type SlickSliderRef = Slider;
 
-export default SlickSlider;
+export default Slider;
 

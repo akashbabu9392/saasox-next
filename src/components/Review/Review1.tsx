@@ -16,7 +16,7 @@ const Review1 = () => {
                   <div className="cs_rating_percentage"></div>
                 </div>
               </div>
-              <p className="cs_fs_20 cs_white_color cs_mb_33">"The Interface Is Excellent"</p>
+              <p className="cs_fs_20 cs_white_color cs_mb_33">&quot;The Interface Is Excellent&quot;</p>
               <img src="/assets/img/rating-logo-1.svg" alt="Logo" />
             </div>
           </div>
@@ -27,7 +27,7 @@ const Review1 = () => {
                   <div className="cs_rating_percentage"></div>
                 </div>
               </div>
-              <p className="cs_fs_20 cs_white_color cs_mb_33">"Improvements In Every Release"</p>
+              <p className="cs_fs_20 cs_white_color cs_mb_33">&quot;Improvements In Every Release&quot;</p>
               <img src="/assets/img/rating-logo-2.svg" alt="Logo" />
             </div>
           </div>
@@ -38,7 +38,7 @@ const Review1 = () => {
                   <div className="cs_rating_percentage"></div>
                 </div>
               </div>
-              <p className="cs_fs_20 cs_white_color cs_mb_33">"The Interface Is Excellent"</p>
+              <p className="cs_fs_20 cs_white_color cs_mb_33">&quot;The Interface Is Excellent&quot;</p>
               <img src="/assets/img/rating-logo-3.svg" alt="Logo" />
             </div>
           </div>

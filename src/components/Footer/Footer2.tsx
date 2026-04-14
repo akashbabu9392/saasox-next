@@ -40,7 +40,7 @@ const Footer2 = () => {
             <div className="cs_brand">
               <img src="/assets/img/logo-2.svg" alt="Logo" />
             </div>
-            <div className="cs_footer_desc_text">Their team's technical expertise is truly outstanding. They took the time to thoroughly understand our goals and requirements and then designed and implemented solutions that not only addressed our immediate challenges but also positioned us for future growth.</div>
+            <div className="cs_footer_desc_text">Their team&apos;s technical expertise is truly outstanding. They took the time to thoroughly understand our goals and requirements and then designed and implemented solutions that not only addressed our immediate challenges but also positioned us for future growth.</div>
           </div>
           <div className="cs_footer_header cs_radius_30">
             <ul className="cs_footer_menu cs_semibold cs_white_color cs_mp_0">
