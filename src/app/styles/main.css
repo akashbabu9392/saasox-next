@@ -3045,6 +3045,30 @@ hr {
 .cs_site_header.cs_style_1 {
   padding: 0 45px;
 }
+
+/* Keep logo responsive across all breakpoints */
+.cs_site_branding {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  max-width: 240px;
+}
+.cs_site_branding .cs_site_logo {
+  display: block;
+  width: auto;
+  height: 34px;
+  max-width: min(240px, 60vw);
+  object-fit: contain;
+}
+@media (max-width: 767px) {
+  .cs_site_branding {
+    max-width: 180px;
+  }
+  .cs_site_branding .cs_site_logo {
+    height: 28px;
+    max-width: min(180px, 62vw);
+  }
+}
 .cs_site_header.cs_style_1 .cs_main_header_in {
   display: flex;
   align-items: center;
@@ -3206,6 +3230,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
   }
   .cs_nav {
     display: flex;
@@ -7546,6 +7571,21 @@ hr {
  .header-area2 .cs_nav {
   color: #000;
 }
+
+/* Header style 2 uses left/center/right columns; avoid absolute-centering overlap */
+@media screen and (min-width: 1200px) {
+  .cs_site_header.header_style_2 .cs_main_header_center {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: auto;
+    max-width: none;
+  }
+  .cs_site_header.header_style_2.cs_style_1 .cs_main_header_in {
+    column-gap: 24px;
+  }
+}
   .cs_nav .cs_nav_list {
     display: flex !important;
     flex-wrap: wrap;
@@ -7801,6 +7841,7 @@ hr {
     position: absolute;
     top: 27px;
     right: 30px;
+    z-index: 110;
  }
   .cs-munu_toggle span, .cs-munu_toggle span:before, .cs-munu_toggle span:after {
     width: 100%;

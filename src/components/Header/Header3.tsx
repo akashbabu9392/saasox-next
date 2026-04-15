@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from "next/link";
 import Nav from './Nav';
 import { coreQcBrand } from "@/config/coreqc";
+import { coreQcNav } from "@/config/coreqc";
 export default function Header3({ variant }:{ variant?: string }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState<string>("");
@@ -47,7 +48,10 @@ export default function Header3({ variant }:{ variant?: string }) {
             </div>
 
             <div className="cs_main_header_left">
-            <Link className="cs_site_branding d-inline-flex flex-column align-items-start" href="/">
+            <Link
+              className="cs_site_branding d-inline-flex flex-column align-items-start"
+              href={coreQcNav.homeVersions[0]?.href ?? "/"}
+            >
                 <span className="d-flex align-items-center gap-2">
                   <img className="cs_site_logo" src={coreQcBrand.logoLightSrc} alt={coreQcBrand.name} />
                 </span>
