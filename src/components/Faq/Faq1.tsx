@@ -2,14 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { coreQcFaqItems } from "@/config/coreqc";
 
 const Faq1 = () => {
-      const faqContent = [
-        {title:'Q. CRM software, and how can it benefit my business?', content:'CRM (Customer Relationship Management) software helps businesses centralize data, streamline sales processes, and improve customer.'},
-        {title:'Q. How do I get started with CRM software?', content:'CRM (Customer Relationship Management) software helps businesses centralize data, streamline sales processes, and improve customer.'},
-        {title:'Q. Can I customize CRM software my business needs?', content:'CRM (Customer Relationship Management) software helps businesses centralize data, streamline sales processes, and improve customer.'},
-        {title:'Q. How secure is my data in CRM software?', content:'CRM (Customer Relationship Management) software helps businesses centralize data, streamline sales processes, and improve customer.'},
-      ]; 
+      const faqContent = coreQcFaqItems.map((item) => ({
+        title: `Q. ${item.question}`,
+        content: item.answer,
+      }));
 
       const accordionContentRef = useRef(null);
       const [openItemIndex, setOpenItemIndex] = useState(-1);
@@ -41,14 +40,14 @@ const Faq1 = () => {
           <div className="col-lg-5">
             <div className="cs_section_heading cs_style_1 cs_faq_heading cs_mb_20">
               <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
-                <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
-                <span>FAQ’s</span>
-                <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
+                <img src="/assets/img/icons/star-1.svg" alt="" />
+                <span>Common Questions</span>
+                <img src="/assets/img/icons/star-1.svg" alt="" />
               </div>
-              <h2 className="cs_section_title cs_fs_48 cs_semibold wow fadeInLeft">Frequently Ask Questions</h2>
-              <p className="cs_card_desc cs_mb_32">All the generators on the Internet tend to repeat predefined chunks as necessary, making this the first true</p>
+              <h2 className="cs_section_title cs_fs_48 cs_semibold wow fadeInLeft">Everything You Need to Know</h2>
+              <p className="cs_card_desc cs_mb_32">Straight answers on setup, compliance, plans, and data — before you start your trial.</p>
               <Link href="/faq" aria-label="FAQ page link" className="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
-              <span>Check More Faq</span>
+              <span>View all FAQ</span>
               <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
               </Link>
             </div>
@@ -73,16 +72,16 @@ const Faq1 = () => {
           </div>
         </div>
         <div className="cs_faq_shape_3 position-absolute">
-          <img src="/assets/img/vector-12.svg" alt="Vector shape" />
+          <img src="/assets/img/vector-12.svg" alt="" />
         </div>
         <div className="cs_faq_shape_4 position-absolute">
-          <img src="/assets/img/vector-13.svg" alt="Vector shape" />
+          <img src="/assets/img/vector-13.svg" alt="" />
         </div>
         <div className="cs_faq_shape_5 position-absolute">
-          <img src="/assets/img/vector-14.svg" alt="Vector shape" />
+          <img src="/assets/img/vector-14.svg" alt="" />
         </div>
         <div className="cs_faq_shape_6 position-absolute">
-          <img src="/assets/img/vector-15.svg" alt="Vector shape" />
+          <img src="/assets/img/vector-15.svg" alt="" />
         </div>
       </div>
       <div className="cs_height_120 cs_height_lg_80"></div>

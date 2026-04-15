@@ -1,5 +1,5 @@
 import BreadCumb from "@/components/Common/BreadCumb";
-import Toolset1 from "@/components/Toolset/Toolset1";
+import IntegrationsCatalog from "@/components/Integrations/IntegrationsCatalog";
 
 const IntegrationsPage = () => {
     return (
@@ -8,7 +8,7 @@ const IntegrationsPage = () => {
                 bgimg="/assets/img/page-heading-bg.svg"
                 Title="Integrations"
             ></BreadCumb>
-            <Toolset1></Toolset1>
+            <IntegrationsCatalog></IntegrationsCatalog>
         </div>
     );
 };

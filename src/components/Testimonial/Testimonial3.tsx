@@ -37,11 +37,9 @@ const Testimonial3 = () => {
 
 
         const testimonialContent = [
-        {subtitle:'Marketing Manager', title:'Juliana Rose', content:'This is why having reviews and client testimonials is so important for your business. So, in this article,  go over some client testimonial examples you should be aware of and how you can go about gathering those testimonials for yourself. This is why having reviews and client testimonials is so important for your business. So, in this article, we’ll go over some client testimonial '},             
-        {subtitle:'UI/UX Designer', title:'Anjelina Rose', content:'This is why having reviews and client testimonials is so important for your business. So, in this article,  go over some client testimonial examples you should be aware of and how you can go about gathering those testimonials for yourself. This is why having reviews and client testimonials is so important for your business. So, in this article, we’ll go over some client testimonial'},             
-        {subtitle:'UI/UX Designer', title:'Anjelina Rose', content:'This is why having reviews and client testimonials is so important for your business. So, in this article,  go over some client testimonial examples you should be aware of and how you can go about gathering those testimonials for yourself. This is why having reviews and client testimonials is so important for your business. So, in this article, we’ll go over some client testimonial'},             
-        { subtitle:'UI/UX Designer', title:'Anjelina Rose', content:'This is why having reviews and client testimonials is so important for your business. So, in this article,  go over some client testimonial examples you should be aware of and how you can go about gathering those testimonials for yourself. This is why having reviews and client testimonials is so important for your business. So, in this article, we’ll go over some client testimonial'},             
-        {subtitle:'UI/UX Designer', title:'Anjelina Rose', content:'This is why having reviews and client testimonials is so important for your business. So, in this article,  go over some client testimonial examples you should be aware of and how you can go about gathering those testimonials for yourself. This is why having reviews and client testimonials is so important for your business. So, in this article, we’ll go over some client testimonial'},             
+        {subtitle:'Lab Director, BioVerify Testing Labs', title:'Dr. Sarah Chen', content:'We went from spending 3 hours writing each monthly report in Word to clicking one button. our platform has genuinely transformed how we run this lab.'},             
+        {subtitle:'Lab Administrator, PharmaGuard Micro', title:'Marcus Webb', content:'The client portal alone is worth it. Our pharmacy clients used to call us 3–4 times a week asking for report updates. Now they just log in themselves.'},             
+        {subtitle:'QC Manager, ClearRoom Labs', title:'Rachel Torres', content:'our platform was set up in a day. The historical trending feature caught an alert-level trend we would have missed.'},             
       ]; 
 
     return (
@@ -51,10 +49,10 @@ const Testimonial3 = () => {
         <div className="cs_section_heading cs_style_1 cs_center_column cs_mb_47 position-relative z-1">
           <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
             <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
-            <span>Testimonial</span>
+            <span>What Labs Are Saying</span>
             <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
           </div>
-          <h2 className="cs_section_title cs_fs_48 cs_semibold mb-0 wow fadeInUp">What our clients say?</h2>
+          <h2 className="cs_section_title cs_fs_48 cs_semibold mb-0 wow fadeInUp">Built by Lab Scientists, For Lab Scientists</h2>
         </div>
         <div className="testimonial_slider_content cs_slider position-relative">
           <div className="cs_testimonial_shape_1 position-absolute">

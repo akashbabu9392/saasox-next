@@ -9,7 +9,7 @@ const ServicePage = () => {
         <div>
             <BreadCumb
                 bgimg="/assets/img/page-heading-bg.svg"
-                Title="Our Services"
+                Title="Features"
             ></BreadCumb>  
              <Services3></Services3>
              <Feature5></Feature5> 

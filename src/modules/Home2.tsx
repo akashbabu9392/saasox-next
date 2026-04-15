@@ -4,7 +4,6 @@ import Faq1 from "@/components/Faq/Faq1";
 import Feature1 from "@/components/Feature/Feature1";
 import Feature2 from "@/components/Feature/Feature2";
 import HeroBanner2 from "@/components/HeroBanner/HeroBanner2";
-import Pricing2 from "@/components/Pricing/Pricing2";
 import Review1 from "@/components/Review/Review1";
 import Services2 from "@/components/Services/Services2";
 import Testimonail2 from "@/components/Testimonial/Testimonail2";
@@ -21,7 +20,6 @@ const Home2 = () => {
             <Feature2></Feature2>
             <Toolset2></Toolset2>
             <Testimonail2></Testimonail2>
-            <Pricing2></Pricing2>
             <Faq1></Faq1>
             <Blog2></Blog2>
         </div>

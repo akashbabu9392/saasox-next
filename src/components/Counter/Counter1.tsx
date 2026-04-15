@@ -9,33 +9,33 @@ const Counter1 = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="cs_numberbox cs_center_column text-center">
               <div className="cs_counter_number cs_fs_48 cs_semibold cs_white_color cs_mb_10">
-                <span className="odometer" data-count-to="16"></span>16K+
+                50%
               </div>
-              <p className="cs_fs_24 cs_white_color mb-0">Completed Our <br/> Projects</p>
+              <p className="cs_fs_18 cs_white_color mb-0">Reduction in report <br/> turnaround time</p>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
             <div className="cs_numberbox cs_center_column text-center">
               <div className="cs_counter_number cs_fs_48 cs_semibold cs_white_color cs_mb_10">
-                <span className="odometer" data-count-to="180"></span>180+
+                3–5x
               </div>
-              <p className="cs_fs_24 cs_white_color mb-0">Our Expert Support <br/> Team Members</p>
+              <p className="cs_fs_18 cs_white_color mb-0">ROI vs manual <br/> processes</p>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
             <div className="cs_numberbox cs_center_column text-center">
               <div className="cs_counter_number cs_fs_48 cs_semibold cs_white_color cs_mb_10">
-                <span className="odometer" data-count-to="6"></span>6K+
+                60–70%
               </div>
-              <p className="cs_fs_24 cs_white_color mb-0">Our Worldwide <br/> Clients</p>
+              <p className="cs_fs_18 cs_white_color mb-0">Lower price vs legacy <br/> LIMS platforms</p>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6">
             <div className="cs_numberbox cs_center_column text-center">
               <div className="cs_counter_number cs_fs_48 cs_semibold cs_white_color cs_mb_10">
-                <span className="odometer" data-count-to="35"></span>35+
+                1 day
               </div>
-              <p className="cs_fs_24 cs_white_color mb-0">We are Winning <br/> Awards</p>
+              <p className="cs_fs_18 cs_white_color mb-0">Average <br/> setup time</p>
             </div>
           </div>
         </div>

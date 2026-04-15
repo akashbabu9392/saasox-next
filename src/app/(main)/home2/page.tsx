@@ -1,6 +1,5 @@
-import Home from "@/modules/Home";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-  return <Home />;
+export default function Home2RedirectPage() {
+  redirect("/");
 }
-

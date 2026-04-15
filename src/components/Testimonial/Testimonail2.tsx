@@ -50,8 +50,8 @@ const Testimonail2 = () => {
        const bgImage = '/assets/img/testimonial-bg-1.svg';
 
         const testimonialContent = [
-            {img:'/assets/img/human-2.png', subtitle:'Marketing Manager', title:'Juliana Rose', content:'We have been using CRM management for months now, and the Our sales pipeline visibility has improved, allowing us make data-driven. We have been using CRM management for months now,and the results speak for themselves. Our sales pipeline visibility has improved, allowing us to make data-driven.'},             
-            {img:'/assets/img/human-2.png', subtitle:'UI/UX Designer', title:'Anjelina Rose', content:'We have been using CRM management for months now, and the Our sales pipeline visibility has improved, allowing us make data-driven. We have been using CRM management for months now,and the results speak for themselves. Our sales pipeline visibility has improved, allowing us to make data-driven.'},             
+            {img:'/assets/img/human-2.png', subtitle:'Lab Director, BioVerify Testing Labs', title:'Dr. Sarah Chen', content:'We went from spending 3 hours writing each monthly report in Word to clicking one button. our platform has genuinely transformed how we run this lab.'},             
+            {img:'/assets/img/human-2.png', subtitle:'QC Manager, ClearRoom Labs', title:'Rachel Torres', content:'our platform was set up in a day. The historical trending feature caught an alert-level trend we would have missed.'},             
           ]; 
 
 
@@ -62,11 +62,11 @@ const Testimonail2 = () => {
         <div className="cs_section_heading cs_style_1 cs_type_1 cs_mb_60">
           <div className="cs_section_heading_left">
             <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
-              <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
-              <span>Testimonial</span>
-              <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
+              <img src="/assets/img/icons/star-1.svg" alt="" />
+              <span>What Labs Are Saying</span>
+              <img src="/assets/img/icons/star-1.svg" alt="" />
             </div>
-            <h2 className="cs_section_title cs_fs_48 cs_semibold mb-0 wow fadeInUp">Positive Feedback from <br/> Our Clients</h2>
+            <h2 className="cs_section_title cs_fs_48 cs_semibold mb-0 wow fadeInUp">Built by Lab Scientists, For Lab Scientists</h2>
           </div>
           <div className="cs_section_heading_right">
             <div className="cs_slider_arrows cs_style_1 cs_type_1">
@@ -86,7 +86,7 @@ const Testimonail2 = () => {
             <div key={i} className="cs_slide">
               <div className="cs_testimonial cs_style_3 cs_white_bg cs_radius_20 position-relative">
                 <div className="cs_testimonial_thumbnail">
-                  <img src={item.img} alt="Human image" />
+                  <img src={item.img} alt="" />
                 </div>
                 <div className="cs_testimonial_info">
                   <div className="cs_rating cs_mb_27" data-rating="5">
@@ -100,7 +100,7 @@ const Testimonail2 = () => {
                     </div>
                   </div>
                   <div className="cs_quote_icon position-absolute">
-                    <img src="/assets/img/icons/qote-2.svg" alt="Quote icon" />
+                    <img src="/assets/img/icons/qote-2.svg" alt="" />
                   </div>
                 </div>
               </div>

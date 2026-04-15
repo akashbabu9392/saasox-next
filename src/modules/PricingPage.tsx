@@ -1,14 +1,15 @@
 import BreadCumb from "@/components/Common/BreadCumb";
-import Pricing4 from "@/components/Pricing/Pricing4";
+import Cta1 from "@/components/Cta/Cta1";
+import { coreQcBrand } from "@/config/coreqc";
 
 const PricingPage = () => {
     return (
         <div>
             <BreadCumb
                 bgimg="/assets/img/page-heading-bg.svg"
-                Title="Our Pricing"
-            ></BreadCumb>   
-            <Pricing4></Pricing4>     
+                Title={coreQcBrand.startFreePageTitle}
+            ></BreadCumb>
+            <Cta1></Cta1>
         </div>
     );
 };

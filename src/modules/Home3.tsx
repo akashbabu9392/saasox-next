@@ -8,7 +8,6 @@ import Cta1 from "@/components/Cta/Cta1";
 import Faq2 from "@/components/Faq/Faq2";
 import Feature3 from "@/components/Feature/Feature3";
 import HeroBanner3 from "@/components/HeroBanner/HeroBanner3";
-import Pricing3 from "@/components/Pricing/Pricing3";
 import Testimonial3 from "@/components/Testimonial/Testimonial3";
 
 const Home3 = () => {
@@ -23,7 +22,6 @@ const Home3 = () => {
             <Counter2></Counter2>
             <Testimonial3></Testimonial3>
             <Faq2></Faq2>
-            <Pricing3></Pricing3>
             <Cta1></Cta1>
             <Blog3></Blog3>
         </div>

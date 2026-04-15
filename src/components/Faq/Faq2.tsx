@@ -1,14 +1,14 @@
 'use client';
 
 import { useEffect, useRef, useState } from "react";
+import { coreQcFaqItems } from "@/config/coreqc";
 
 const Faq2 = () => {
 
-            const faqContent = [
-            {title:'What pricing plans do you offer for your app?', content:'No, we are transparent about our pricing structure, and there are hidden fees or additional charges. The price you see is the price you pay'},
-            {title:'Are there any hidden fees or additional charges?', content:'No, we are transparent about our pricing structure, and there are hidden fees or additional charges. The price you see is the price you pay'},
-            {title:'What payment methods do you accept?', content:'No, we are transparent about our pricing structure, and there are hidden fees or additional charges. The price you see is the price you pay'},
-          ]; 
+            const faqContent = coreQcFaqItems.slice(0, 5).map((item) => ({
+              title: item.question,
+              content: item.answer,
+            }));
     
           const accordionContentRef = useRef(null);
           const [openItemIndex, setOpenItemIndex] = useState(-1);
@@ -47,13 +47,13 @@ const Faq2 = () => {
             <div className="cs_faq_content">
               <div className="cs_section_heading cs_style_1 cs_mb_20">
                 <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
-                  <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
-                  <span>faq</span>
-                  <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
+                  <img src="/assets/img/icons/star-1.svg" alt="" />
+                  <span>Common Questions</span>
+                  <img src="/assets/img/icons/star-1.svg" alt="" />
                 </div>
-                <h2 className="cs_section_title cs_fs_48 cs_semibold mb-0 wow fadeInDown">Frequently Ask Questions</h2>
+                <h2 className="cs_section_title cs_fs_48 cs_semibold mb-0 wow fadeInDown">Everything You Need to Know</h2>
               </div>
-              <p className="cs_card_desc cs_mb_56">Highlight the most important features and functionalities of the app. Use concise descriptions or bullet points to emphasize what sets your app</p>
+              <p className="cs_card_desc cs_mb_56">Plans, compliance, setup time, and data ownership — answered upfront.</p>
               <div className="cs_faq_wrapper_1">
 
                 {faqContent.map((item, index) => (

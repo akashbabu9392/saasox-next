@@ -6,7 +6,7 @@ const BlogPage = () => {
         <div>
               <BreadCumb
                 bgimg="/assets/img/page-heading-bg.svg"
-                Title="Blog"
+                Title="Resources"
             ></BreadCumb>    
             <Blog5></Blog5>          
         </div>

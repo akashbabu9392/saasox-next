@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const Feature1 = () => {
     return (
  <section className="position-relative">
@@ -9,38 +7,42 @@ const Feature1 = () => {
           <div className="row cs_gap_y_40">
             <div className="col-lg-6 order-lg-2">
               <div className="cs_card_thumbnail">
-                <img src="/assets/img/dashboard-2.png" alt="Dashboard image" />
+                <img src="/assets/img/dashboard-2.png" alt="our platform dashboard" />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">
               <div className="cs_card_content">
                 <div className="cs_section_heading cs_style_1 cs_mb_34">
                   <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
-                    <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
-                    <span>Appreciation feature</span>
-                    <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
+                    <img src="/assets/img/icons/star-1.svg" alt="" />
+                    <span>Sound Familiar?</span>
+                    <img src="/assets/img/icons/star-1.svg" alt="" />
                   </div>
-                  <h2 className="cs_section_title cs_fs_48 cs_semibold wow fadeInUp">Our Priority CRM Options For The Future</h2>
-                  <p className="mb-0">CRM management is comprehensive contact management, allowing businesses to centralize and organize customer information for easy access.</p>
+                  <h2 className="cs_section_title cs_fs_48 cs_semibold wow fadeInUp">The Way Labs Work Today Is Broken</h2>
+                  <p className="mb-0">Labs still juggle Excel, Word, and email for USP 797 — costing hours every month and risking gaps at inspection time.</p>
                 </div>
                 <div className="cs_service_item cs_radius_15 cs_gray_bg_2 cs_mb_24 cs_active">
-                  <h3 className="cs_service_title cs_fs_24 cs_semibold cs_mb_8">Sales Force Automation</h3>
-                  <p className="mb-0">CRM management is comprehensive contact management, allowing businesses to centralize and organize customer information for allowing businesses to centralize and organize easy access.</p>
+                  <h3 className="cs_service_title cs_fs_24 cs_semibold cs_mb_8">Reports Take Hours to Write</h3>
+                  <p className="mb-0">You&apos;re copy-pasting client data into Word templates, calculating trending manually in Excel, and emailing PDFs that bounce back when inboxes are full.</p>
+                </div>
+                <div className="cs_service_item cs_radius_15 cs_gray_bg_2 cs_mb_24">
+                  <h3 className="cs_service_title cs_fs_24 cs_semibold cs_mb_8">Clients Call Constantly</h3>
+                  <p className="mb-0">Pharmacy QA managers want to know if their report is ready. You spend half your day on status calls that could be self-served in a portal.</p>
+                </div>
+                <div className="cs_service_item cs_radius_15 cs_gray_bg_2 cs_mb_24">
+                  <h3 className="cs_service_title cs_fs_24 cs_semibold cs_mb_8">No Audit Trail</h3>
+                  <p className="mb-0">When an FDA inspector asks for a chain of custody from 18 months ago, you&apos;re digging through filing cabinets. Version control on Word docs is a disaster.</p>
                 </div>
                 <div className="cs_service_item cs_radius_15 cs_mb_48">
-                  <h3 className="cs_service_title cs_fs_24 cs_semibold cs_mb_8">Lead Management</h3>
-                  <p className="mb-0">CRM management is comprehensive contact management, allowing businesses to centralize and organize customer information for allowing businesses to centralize and organize easy access.</p>
+                  <h3 className="cs_service_title cs_fs_24 cs_semibold cs_mb_8">Generic LIMS Cost $275+/User</h3>
+                  <p className="mb-0">Enterprise platforms like QBench, LabWare, and LabVantage cost 5–10x more, take months to implement, and weren&apos;t built for environmental monitoring.</p>
                 </div>
                 <div className="cs_btns_group">
-                  <Link href="/contact" aria-label="Get started button" className="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
-                  <span>Get Started Free</span>
-                  <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
-                  </Link>
                   <div className="cs_client_info_wrapper">
-                    <img src="/assets/img/customers-group.png" alt="Customers image" />
+                    <img src="/assets/img/customers-group.png" alt="" />
                     <div>
-                      <h3 className="cs_fs_30 cs_semibold mb-0">3.5k <span>+</span></h3>
-                      <p className="cs_heading_color mb-0">Active Customer</p>
+                      <h3 className="cs_fs_30 cs_semibold mb-0">10+</h3>
+                      <p className="cs_heading_color mb-0">Pilot labs</p>
                     </div>
                   </div>
                 </div>

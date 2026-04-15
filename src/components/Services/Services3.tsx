@@ -1,5 +1,4 @@
 import ServiceCard1 from '../Card/ServiceCard1';
-import Link from 'next/link';
 import { serviceDetailsDb } from '@/db/services';
 
 const Services3 = () => {
@@ -11,25 +10,29 @@ const Services3 = () => {
  <section className="position-relative">
       <div className="cs_height_120 cs_height_lg_80"></div>
       <div className="container">
+        <div className="cs_section_heading cs_style_1 cs_mb_47 cs_center_column text-center position-relative z-1">
+          <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
+            <img src="/assets/img/icons/star-1.svg" alt="" />
+            <span>Product</span>
+            <img src="/assets/img/icons/star-1.svg" alt="" />
+          </div>
+          <h2 className="cs_section_title cs_fs_48 cs_semibold mb-0 wow fadeInUp">Every Feature Your Lab Needs to Go Paperless</h2>
+          <p className="cs_card_desc cs_mt_22 mb-0">our platform is purpose-built for environmental monitoring labs. Here&apos;s everything you get out of the box — no configuration wizards, no consultants required.</p>
+        </div>
 
         <div className="cs_features_items_wrapper position-relative z-1">
           <div className="cs_feature_item cs_radius_20 cs_bg_filed" style={{ backgroundImage: `url(${bgImage})`}}>
-            <h3 className="cs_fs_36 cs_semibold cs_white_color cs_mb_40">See more and get visibility <br/> for your business</h3>
-            <Link href="/contact" aria-label="Get started button" className="cs_btn cs_style_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
-            <span>Get Started</span>
-            <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
-            </Link>
+            <h3 className="cs_fs_36 cs_semibold cs_white_color cs_mb_40">One platform: CoC → results → <br/> PDF → portal</h3>
           </div>
 
           <ServiceCard1
             addclass="cs_bg_00"
             serviceicon="/assets/img/icons/code-icon.svg"
-            title="Software Development"
+            title="Chain of Custody (CoC)"
             featureList={[
-                "Security",
-                "Agile Methodologies",
-                "Clear Requirements",
-                "Feedback &  Improvement"
+                "Digital CoC creation and submission",
+                "Draft → Submitted lifecycle",
+                "Sample locations & media lot tracking",
             ]}
             btnname="Read More"
             btnurl={detailsHref}
@@ -38,12 +41,11 @@ const Services3 = () => {
           <ServiceCard1
             addclass="cs_bg_1"
             serviceicon="/assets/img/icons/cloud-computing.svg"
-            title="Cloud Computing Solutions"
+            title="Sample Testing & Results"
             featureList={[
-                "Security",
-                "Agile Methodologies",
-                "Clear Requirements",
-                "Feedback &  Improvement"
+                "CFU entry and organism identification",
+                "Plate images and incubation parameters",
+                "Alert/action evaluation per sample",
             ]}
             btnname="Read More"
             btnurl={detailsHref}
@@ -52,12 +54,11 @@ const Services3 = () => {
           <ServiceCard1
             addclass="cs_bg_2"
             serviceicon="/assets/img/icons/quality-assurance.svg"
-            title="Quality Assurance"
+            title="One-Click PDF Report Generator"
             featureList={[
-                "Security",
-                "Agile Methodologies",
-                "Clear Requirements",
-                "Feedback &  Improvement"
+                "Automated PDF from CoC + results",
+                "Versioning and approval workflow",
+                "Historical trending and floor plans",
             ]}
             btnname="Read More"
             btnurl={detailsHref}
@@ -66,12 +67,37 @@ const Services3 = () => {
           <ServiceCard1
             addclass="cs_bg_3"
             serviceicon="/assets/img/icons/security.svg"
-            title="Cybersecurity Services"
+            title="Free Client Portal"
             featureList={[
-                "Security",
-                "Agile Methodologies",
-                "Clear Requirements",
-                "Feedback &  Improvement"
+                "Self-service report access",
+                "Threaded comments and notifications",
+                "Always free on all plans",
+            ]}
+            btnname="Read More"
+            btnurl={detailsHref}
+          ></ServiceCard1>
+
+          <ServiceCard1
+            addclass="cs_bg_00"
+            serviceicon="/assets/img/icons/advanced-tracking.svg"
+            title="Scheduling & Calendar"
+            featureList={[
+                "Recurring submission schedules",
+                "Calendar view and status history",
+                "Client-visible schedules",
+            ]}
+            btnname="Read More"
+            btnurl={detailsHref}
+          ></ServiceCard1>
+
+          <ServiceCard1
+            addclass="cs_bg_1"
+            serviceicon="/assets/img/icons/analytics.svg"
+            title="Role-Based Access Control"
+            featureList={[
+                "Five roles with granular permissions",
+                "Audit trail and activity logs",
+                "Encryption in transit and at rest",
             ]}
             btnname="Read More"
             btnurl={detailsHref}
@@ -80,10 +106,10 @@ const Services3 = () => {
         </div>
       </div>
       <div className="cs_feature_shape_1 position-absolute">
-        <img src="/assets/img/3d-shape.png" alt="Vector shape" />
+        <img src="/assets/img/3d-shape.png" alt="" />
       </div>
       <div className="cs_feature_shape_2 position-absolute">
-        <img src="/assets/img/spring-shape.png" alt="Spring shape" />
+        <img src="/assets/img/spring-shape.png" alt="" />
       </div>
     </section>
     );

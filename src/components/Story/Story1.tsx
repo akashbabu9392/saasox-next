@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import VideoModal from '../VideoModal/VideoModal';
 
 const Story1 = () => {
@@ -30,7 +31,7 @@ const Story1 = () => {
                 <span className="cs_player_btn cs_style_1 cs_center cs_radius_100 cs_theme_bg_3 cs_white_color position-relative"><i className="bi bi-play-fill"></i>
                 </span>
                 <div className="cs_vector_shape_5 position-absolute">
-                  <img src="/assets/img/vector-10.svg" alt="Vector shape" />
+                  <img src="/assets/img/vector-10.svg" alt="" />
                 </div>
               </a>
             </div>
@@ -38,23 +39,23 @@ const Story1 = () => {
               <div className="cs_card_content">
                 <div className="cs_section_heading cs_style_1 cs_mb_20">
                   <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
-                    <img src="/assets/img/icons/star-1.svg" alt="Star icon" /> 
-                    <span>Costumer Story</span>
-                    <img src="/assets/img/icons/star-1.svg" alt="Star icon" />
+                    <img src="/assets/img/icons/star-1.svg" alt="" /> 
+                    <span>Lab story</span>
+                    <img src="/assets/img/icons/star-1.svg" alt="" />
                   </div>
-                  <h2 className="cs_section_title cs_fs_48 cs_semibold text-capitalize mb-0 wow fadeInDown">How a certain consumer used a product successfully</h2>
+                  <h2 className="cs_section_title cs_fs_48 cs_semibold text-capitalize mb-0 wow fadeInDown">From three-hour reports to one-click PDFs</h2>
                 </div>
-                <p className="cs_card_desc cs_mb_51">CRM management is comprehensive contact management, allowing businesses to centralize and organize customer information for easy access.</p>
+                <p className="cs_card_desc cs_mb_51">See how independent EM labs use our platform to cut reporting time, keep clients in the loop with a free portal, and stay audit-ready — without enterprise LIMS cost or implementation drag.</p>
                 <div className="cs_btns_group">
-                  <a href="#" aria-label="Get started button" className="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
-                  <span>read costumer story </span>
+                  <Link href="/contact" aria-label="Watch product tour" className="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+                  <span>Watch 3-min Demo</span>
                   <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
-                  </a>
+                  </Link>
                   <div className="cs_client_info_wrapper">
-                    <img src="/assets/img/customers-group-2.png" alt="Customers image" />
+                    <img src="/assets/img/customers-group-2.png" alt="" />
                     <div>
-                      <h3 className="cs_fs_18 cs_normal mb-0">Happy Costumer</h3>
-                      <p className="mb-0"><span className="cs_theme_color_5"><i className="bi bi-star-fill"></i></span> 3.5(10k Review)</p>
+                      <h3 className="cs_fs_18 cs_normal mb-0">10+ pilot labs</h3>
+                      <p className="mb-0"><span className="cs_theme_color_5"><i className="bi bi-star-fill"></i></span> Design partners</p>
                     </div>
                   </div>
                 </div>

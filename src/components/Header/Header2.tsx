@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from "next/link";
 import Nav from './Nav';
+import { coreQcBrand } from "@/config/coreqc";
 export default function Header2({ variant }:{ variant?: string }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState<string>("");
@@ -41,8 +42,11 @@ export default function Header2({ variant }:{ variant?: string }) {
         <div className="container-fluid">
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
-            <Link className="cs_site_branding" href="/">
-                <img src="/assets/img/logo-2.svg" alt="Logo" />
+            <Link className="cs_site_branding d-inline-flex flex-column align-items-start" href="/">
+                <span className="d-flex align-items-center gap-2">
+                  <span className="cs_fs_18 cs_semibold cs_heading_color">{coreQcBrand.name}</span>
+                </span>
+                <span className="cs_fs_12 cs_heading_color opacity-75">by {coreQcBrand.company}</span>
               </Link>
               </div>
               <div className="cs_main_header_center">
@@ -61,13 +65,10 @@ export default function Header2({ variant }:{ variant?: string }) {
                 </div>
             </div>
             <div className="cs_main_header_right">
-              <div className="header-btn d-flex align-items-center">
-                <div className="main-button header-btn-1">
-                <Link href="/contact" className="cs_btn cs_style_1 cs_theme_bg_4 cs_fs_14 cs_bold cs_heading_color text-uppercase">
-                <span>Get Started</span>
-                 <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
+              <div className="header-btn d-flex align-items-center gap-3 flex-wrap">
+                <Link href={coreQcBrand.signInHref} className="cs_fs_14 cs_bold cs_heading_color text-uppercase">
+                  {coreQcBrand.signInLabel}
                 </Link>
-                  </div>
 
               </div>
             </div>

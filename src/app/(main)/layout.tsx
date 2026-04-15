@@ -1,5 +1,5 @@
-import Header1 from "@/components/Header/Header1";
 import Footer1 from "@/components/Footer/Footer1";
+import Header3 from "@/components/Header/Header3";
 
 export default function MainLayout({
   children,
@@ -8,7 +8,7 @@ export default function MainLayout({
 }>) {
   return (
     <div className="main-page-area">
-      <Header1 />
+      <Header3 />
       {children}
       <Footer1 />
     </div>

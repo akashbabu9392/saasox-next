@@ -10,33 +10,33 @@ const Counter2 = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="cs_numberbox">
                 <div className="cs_counter_number cs_fs_74 cs_semibold cs_white_color cs_mb_10">
-                  <span className="odometer" data-count-to="56">56</span>K+
+                  50%
                 </div>
-                <p className="cs_fs_18 cs_white_color mb-0">Customers visit app <br/> every months</p>
+                <p className="cs_fs_18 cs_white_color mb-0">Faster report <br/> turnaround</p>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
               <div className="cs_numberbox">
                 <div className="cs_counter_number cs_fs_74 cs_semibold cs_white_color cs_mb_10">
-                  <span className="odometer" data-count-to="32">32</span>K+
+                  $27K+
                 </div>
-                <p className="cs_fs_18 cs_white_color mb-0">Total downloaded of <br/> our app</p>
+                <p className="cs_fs_18 cs_white_color mb-0">Average annual savings <br/> per lab</p>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
               <div className="cs_numberbox">
                 <div className="cs_counter_number cs_fs_74 cs_semibold cs_white_color cs_mb_10">
-                  <span className="odometer" data-count-to="156">156</span>K+
+                  1 day
                 </div>
-                <p className="cs_fs_18 cs_white_color mb-0">Total Members of Relatix <br/> App Users</p>
+                <p className="cs_fs_18 cs_white_color mb-0">Average setup <br/> time</p>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
               <div className="cs_numberbox">
                 <div className="cs_counter_number cs_fs_74 cs_semibold cs_white_color cs_mb_10">
-                  <span className="odometer" data-count-to="42">42</span>+
+                  $0
                 </div>
-                <p className="cs_fs_18 cs_white_color mb-0">Satisfaction rate from our <br/> customers.</p>
+                <p className="cs_fs_18 cs_white_color mb-0">Cost of client portal <br/> access</p>
               </div>
             </div>
           </div>
