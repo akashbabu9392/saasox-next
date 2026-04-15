@@ -18,7 +18,7 @@ export const coreQcBrand = {
   secondaryCta: "Book a Demo",
   signInLabel: "Sign In",
   signInHref: "/contact",
-  copyright: "© 2026 RainerTek Inc. All rights reserved.",
+  copyright: "© 2026 RainerTek LLC. All rights reserved.",
 } as const;
 
 export const coreQcContact = {
