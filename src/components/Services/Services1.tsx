@@ -1,10 +1,10 @@
 import ServiceCard1 from '../Card/ServiceCard1';
-import { serviceDetailsDb } from '@/db/services';
+import { uiText } from '@/constants/ui';
+import { labServiceCards } from '@/data/lab-service-cards';
 
 const Services1 = () => {
 
       const bgImage = '/assets/img/feature-item-bg.svg';
-      const detailsHref = `/service/${serviceDetailsDb[0]?.slug ?? "service-details"}`;
 
     return (
  <section className="position-relative">
@@ -24,79 +24,17 @@ const Services1 = () => {
             <h3 className="cs_fs_36 cs_semibold cs_white_color cs_mb_40">Digitize CoC through <br/> signed PDF delivery</h3>
           </div>
 
-          <ServiceCard1
-            addclass="cs_bg_00"
-            serviceicon="/assets/img/icons/code-icon.svg"
-            title="Chain of Custody"
-            featureList={[
-                "Digital CoC forms with sample locations",
-                "Media lot tracking and air sampler data",
-                "Auto sample IDs with configurable patterns",
-            ]}
-            btnname="Read More"
-            btnurl={detailsHref}
-          ></ServiceCard1>
-
-          <ServiceCard1
-            addclass="cs_bg_1"
-            serviceicon="/assets/img/icons/cloud-computing.svg"
-            title="Sample Results & Organism ID"
-            featureList={[
-                "CFU counts and incubation parameters",
-                "Plate images and organism identification",
-                "One structured screen for technicians",
-            ]}
-            btnname="Read More"
-            btnurl={detailsHref}
-          ></ServiceCard1>
-
-          <ServiceCard1
-            addclass="cs_bg_2"
-            serviceicon="/assets/img/icons/quality-assurance.svg"
-            title="One-Click PDF Reports"
-            featureList={[
-                "Professional USP 797 lab reports instantly",
-                "E-signatures, trending, floor plans",
-            ]}
-            btnname="Read More"
-            btnurl={detailsHref}
-          ></ServiceCard1>
-
-          <ServiceCard1
-            addclass="cs_bg_3"
-            serviceicon="/assets/img/icons/security.svg"
-            title="Free Client Portal"
-            featureList={[
-                "Self-service for pharmacy clients",
-                "Reports, CoC, and trends — no extra fee",
-            ]}
-            btnname="Read More"
-            btnurl={detailsHref}
-          ></ServiceCard1>
-
-          <ServiceCard1
-            addclass="cs_bg_00"
-            serviceicon="/assets/img/icons/advanced-tracking.svg"
-            title="Historical Trending"
-            featureList={[
-                "Z-scores across sampling events",
-                "Catch excursions before action levels",
-            ]}
-            btnname="Read More"
-            btnurl={detailsHref}
-          ></ServiceCard1>
-
-          <ServiceCard1
-            addclass="cs_bg_1"
-            serviceicon="/assets/img/icons/analytics.svg"
-            title="Real-Time Notifications"
-            featureList={[
-                "Socket.IO and email alerts",
-                "Per-user notification preferences",
-            ]}
-            btnname="Read More"
-            btnurl={detailsHref}
-          ></ServiceCard1>
+          {labServiceCards.map((card) => (
+            <ServiceCard1
+              key={card.slug}
+              addclass={card.addClass}
+              serviceicon={card.iconSrc}
+              title={card.title}
+              featureList={card.featureList}
+              btnname={uiText.actions.readMore}
+              btnurl={`/service/${card.slug}`}
+            />
+          ))}
 
         </div>
       </div>
