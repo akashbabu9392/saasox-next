@@ -6,7 +6,7 @@ export const coreQcNav = {
     { label: "Home Version 3", href: "/home3" },
   ],
   primaryLinks: [
-    { label: "Features", href: "/service" },
+    { label: "Features", href: "/features" },
     { label: "Integrations", href: "/integrations" },
     { label: "Blog", href: "/blog" },
     { label: "Use Cases", href: "/use-cases" },

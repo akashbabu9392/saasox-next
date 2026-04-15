@@ -18,7 +18,8 @@ const Blog5 = () => {
         <div className="row cs_row_gap_30 cs_gap_y_30">
                 {blogDb.map((post) => {
                     const postHref = `/blog/${post.slug}`;
-                    const excerpt = post.bodyParagraphs[0] ?? "";
+                    const excerptBlock = post.content.find((b) => b.type === "paragraph");
+                    const excerpt = excerptBlock?.type === "paragraph" ? excerptBlock.text : "";
                     return (
                     <div key={post.slug} className="col-lg-4 col-md-6">
                     <article className="cs_post cs_style_1 cs_radius_20">
@@ -30,11 +31,11 @@ const Blog5 = () => {
                     <div className="cs_post_meta_wrapper cs_mb_12">
                     <div className="cs_post_meta">
                     <span><i className="bi bi-person"></i></span>
-                    <span>RainerTek</span>
+                    <span>{post.author}</span>
                     </div>
                     <div className="cs_post_meta">
                     <span><i className="bi bi-calendar-check-fill"></i></span>
-                    <span>{post.postedMonth} {post.postedDay}, 2026</span>
+                    <span>{post.postedMonth} {post.postedDay}, {post.postedYear}</span>
                     </div>
                     </div>
                     <h2 className="cs_post_title cs_fs_24 cs_semibold cs_mb_13"><Link href={postHref} aria-label="Reading details post link">{post.title}</Link></h2>

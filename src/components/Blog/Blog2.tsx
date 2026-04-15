@@ -7,7 +7,7 @@ const Blog2 = () => {
           img: post.bannerImageSrc,
           title: post.title,
           category: post.categoryLabel,
-          date: `${post.postedMonth} ${post.postedDay}, 2026`,
+          date: `${post.postedMonth} ${post.postedDay}, ${post.postedYear}`,
         }));
 
     return (

@@ -3,7 +3,53 @@ import type { BlogPostRecord } from "@/db/blog";
 import { blogDb } from "@/db/blog";
 
 const BlogDetails = ({ data }: { data: BlogPostRecord }) => {
-    const detailsHref = `/blog/${blogDb[0]?.slug ?? "blog-details"}`;
+    const detailsHref = `/blog/${blogDb[0]?.slug ?? "usp-797-revised-standards-2026"}`;
+    const resourcesHref = "/blog";
+
+    const renderContentBlock = (
+      block:
+        | { type: "paragraph"; text: string }
+        | { type: "heading"; text: string }
+        | { type: "bullets"; items: string[] }
+        | { type: "ordered"; items: string[] }
+        | { type: "quote"; text: string }
+    ) => {
+      if (block.type === "heading") {
+        return <h3 className="cs_fs_24 cs_semibold cs_mb_12">{block.text}</h3>;
+      }
+      if (block.type === "paragraph") {
+        return <p>{block.text}</p>;
+      }
+      if (block.type === "quote") {
+        return (
+          <div className="cs_quote_wrapper position-relative">
+            <blockquote>{block.text}</blockquote>
+            <img src="/assets/img/icons/qote-3.svg" alt="Quote icon" />
+          </div>
+        );
+      }
+      if (block.type === "bullets") {
+        return (
+          <ul className="cs_features_list cs_mp_0">
+            {block.items.map((item) => (
+              <li key={item}>
+                <img src="/assets/img/icons/caret-icon.svg" alt="Caret icon" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        );
+      }
+      return (
+        <ol className="cs_mp_0">
+          {block.items.map((item) => (
+            <li key={item} className="cs_card_desc cs_mb_12">
+              {item}
+            </li>
+          ))}
+        </ol>
+      );
+    };
     return (
  <section>
       <div className="cs_height_120 cs_height_lg_80"></div>
@@ -119,11 +165,11 @@ const BlogDetails = ({ data }: { data: BlogPostRecord }) => {
               <div className="cs_post_meta_wrapper cs_mb_17">
                 <div className="cs_post_meta">
                   <span className="cs_blue_color"><i className="bi bi-person"></i></span>
-                  <span className="cs_heading_color">Admin</span>
+                  <span className="cs_heading_color">{data.author}</span>
                 </div>
                 <div className="cs_post_meta">
-                  <span className="cs_blue_color"><i className="bi bi-chat"></i></span>
-                  <span className="cs_heading_color">2 Comments</span>
+                  <span className="cs_blue_color"><i className="bi bi-calendar-check-fill"></i></span>
+                  <span className="cs_heading_color">{data.postedMonth} {data.postedDay}, {data.postedYear}</span>
                 </div>
                 <div className="cs_post_meta">
                   <span className="cs_blue_color"><i className="bi bi-bookmark"></i></span>
@@ -131,24 +177,20 @@ const BlogDetails = ({ data }: { data: BlogPostRecord }) => {
                 </div>
               </div>
               <h2>{data.title}</h2>
-              <p>{data.bodyParagraphs[0]}</p>
-              <p>{data.bodyParagraphs[1]}</p>
-              <div className="row cs_row_gap_30 cs_gap_y_30 cs_mb_30 cs_mb_40">
-                <div className="col-md-6">
-                  <img src="/assets/img/post-img-11.jpg" alt="Post gallery image" />
-                </div>
-                <div className="col-md-6">
-                  <img src="/assets/img/post-img-12.jpg" alt="Post gallery image" />
-                </div>
+              <div className="cs_height_10"></div>
+              <div className="cs_post_share_wrapper cs_mb_30">
+                <Link href={resourcesHref} className="cs_post_btn cs_heading_color" aria-label="Back to resources">
+                  <span>Back to Resources</span>
+                  <span>
+                    <i className="bi bi-arrow-right"></i>
+                  </span>
+                </Link>
               </div>
-              <p>The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.</p>
-              <div className="cs_quote_wrapper position-relative">
-                <blockquote>            
-                  Pellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi ipsum eu metus. Praesent eleifend orci sit amet est vehicula.
-                </blockquote>
-                <img src="/assets/img/icons/qote-3.svg" alt="Quote icon" />
-              </div>
-              <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
+              {data.content.map((block, idx) => (
+                <div key={`${block.type}-${idx}`} className="cs_mb_20">
+                  {renderContentBlock(block)}
+                </div>
+              ))}
               <div className="cs_post_share_wrapper">
                 <div className="cs_post_tags cs_style_1">
                   <h3 className="cs_fs_16 cs_semibold">Tags:</h3>

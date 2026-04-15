@@ -1,38 +1,6 @@
 import BreadCumb from "@/components/Common/BreadCumb";
 import Link from "next/link";
-
-const useCases = [
-  {
-    title: "USP 797 Compounding Pharmacy Testing",
-    description:
-      "Full digital workflow for 503A and 503B compounding pharmacies — from CoC intake through microbial testing, organism identification, and USP 797-formatted PDF report delivery.",
-    who: "Independent micro labs, hospital pharmacy cleanrooms, 503B outsourcing facilities",
-  },
-  {
-    title: "Hospital Pharmacy Cleanroom Programs",
-    description:
-      "Hospital in-house testing programs managing environmental monitoring for ISO 5, 7, and 8 cleanrooms. Maintain full audit trails for accreditation and inspection readiness across multiple facilities.",
-    who: "Hospital pharmacy departments, health system QA teams",
-  },
-  {
-    title: "Multi-Client Lab Networks",
-    description:
-      "Serve dozens of pharmacy or facility clients from a single lab tenant. Unlimited client portal access, segregated data per company, and bulk reporting for high-volume labs.",
-    who: "Regional EM testing labs, contract testing organizations",
-  },
-  {
-    title: "Environmental Testing Labs (Expanding)",
-    description:
-      "our Template Builder (coming Q3 2026) will allow environmental testing labs to define custom test parameters, intake forms, and report templates for non-USP workflows.",
-    who: "Environmental labs, food safety labs, water quality programs",
-  },
-  {
-    title: "Cannabis Testing Labs (Coming)",
-    description:
-      "State-regulated cannabis testing requires rigorous chain-of-custody and reporting. our configurable template system will support cannabis microbiology and chemistry test types.",
-    who: "Cannabis testing labs, dispensary QC programs",
-  },
-];
+import { useCaseDetailsDb } from "@/db/use-cases";
 
 export default function UseCasesPage() {
   return (
@@ -55,16 +23,19 @@ export default function UseCasesPage() {
             </p>
           </div>
           <div className="row cs_row_gap_30 cs_gap_y_30">
-            {useCases.map((uc) => (
-              <div key={uc.title} className="col-lg-6">
+            {useCaseDetailsDb.map((uc) => (
+              <div key={uc.slug} className="col-lg-6">
                 <article className="cs_card cs_style_1 cs_gray_bg_2 cs_radius_20 p-4 h-100">
-                  <h2 className="cs_fs_24 cs_semibold cs_mb_12">{uc.title}</h2>
-                  <p className="cs_card_desc cs_mb_16">{uc.description}</p>
+                  <h2 className="cs_fs_24 cs_semibold cs_mb_12">{uc.heroTitle}</h2>
+                  <p className="cs_card_desc cs_mb_16">{uc.overview}</p>
                   <p className="cs_fs_14 cs_mb_20 mb-0">
-                    <span className="cs_semibold">Who it&apos;s for:</span> {uc.who}
+                    <span className="cs_semibold">Who it&apos;s for:</span> {uc.whoItsFor}
                   </p>
-                  <Link href="/contact" className="cs_text_btn cs_fs_14 cs_bold text-uppercase">
-                    <span>Learn more</span>
+                  <Link
+                    href={`/use-cases/${uc.slug}`}
+                    className="cs_text_btn cs_fs_14 cs_bold text-uppercase"
+                  >
+                    <span>Learn More</span>
                     <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
                   </Link>
                 </article>

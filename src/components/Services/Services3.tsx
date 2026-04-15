@@ -1,10 +1,10 @@
 import ServiceCard1 from '../Card/ServiceCard1';
-import { serviceDetailsDb } from '@/db/services';
+import { featureDetailsDb } from '@/db/features';
 
 const Services3 = () => {
 
            const bgImage = '/assets/img/feature-item-bg.svg';
-           const detailsHref = `/service/${serviceDetailsDb[0]?.slug ?? "service-details"}`;
+           const featureHrefBySlug = (slug: string) => `/features/${slug}`;
 
     return (
  <section className="position-relative">
@@ -35,7 +35,7 @@ const Services3 = () => {
                 "Sample locations & media lot tracking",
             ]}
             btnname="Read More"
-            btnurl={detailsHref}
+            btnurl={featureHrefBySlug(featureDetailsDb[0]?.slug ?? "chain-of-custody")}
           ></ServiceCard1>
 
           <ServiceCard1
@@ -48,7 +48,7 @@ const Services3 = () => {
                 "Alert/action evaluation per sample",
             ]}
             btnname="Read More"
-            btnurl={detailsHref}
+            btnurl={featureHrefBySlug("sample-testing-results")}
           ></ServiceCard1>
 
           <ServiceCard1
@@ -61,7 +61,7 @@ const Services3 = () => {
                 "Historical trending and floor plans",
             ]}
             btnname="Read More"
-            btnurl={detailsHref}
+            btnurl={featureHrefBySlug("pdf-report-generator")}
           ></ServiceCard1>
 
           <ServiceCard1
@@ -74,7 +74,7 @@ const Services3 = () => {
                 "Always free on all plans",
             ]}
             btnname="Read More"
-            btnurl={detailsHref}
+            btnurl={featureHrefBySlug("client-portal")}
           ></ServiceCard1>
 
           <ServiceCard1
@@ -87,7 +87,7 @@ const Services3 = () => {
                 "Client-visible schedules",
             ]}
             btnname="Read More"
-            btnurl={detailsHref}
+            btnurl={featureHrefBySlug("scheduling-calendar")}
           ></ServiceCard1>
 
           <ServiceCard1
@@ -100,7 +100,7 @@ const Services3 = () => {
                 "Encryption in transit and at rest",
             ]}
             btnname="Read More"
-            btnurl={detailsHref}
+            btnurl={featureHrefBySlug("role-based-access-control")}
           ></ServiceCard1>
 
         </div>
