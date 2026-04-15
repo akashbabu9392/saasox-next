@@ -4215,6 +4215,30 @@ hr {
 .cs_hero.cs_style_1 .cs_hero_thumbnail img {
   width: 100%;
 }
+.cs_hero.cs_style_1 .cs_hero_thumbnail .cs_hero_lab_card {
+  position: relative;
+  width: 100%;
+  /* Match the original large mockup feel */
+  aspect-ratio: 759 / 650;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  transform: rotate(-2deg);
+}
+.cs_hero.cs_style_1 .cs_hero_thumbnail .cs_hero_lab_card_img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.cs_hero.cs_style_1 .cs_hero_thumbnail .cs_hero_lab_card_overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(10, 30, 20, 0.15) 0%, transparent 60%);
+}
 .cs_hero.cs_style_1 .cs_hero_text {
   width: 100%;
   max-width: 744px;
@@ -4265,6 +4289,10 @@ hr {
     right: 3%;
     z-index: 1;
   }
+  .cs_hero.cs_style_1 .cs_hero_thumbnail .cs_hero_lab_card {
+    /* Let it bleed slightly like the original mockups */
+    margin-right: -44px;
+  }
 }
 @media (max-width: 1399px) {
   .cs_hero.cs_style_1 .cs_hero_content {
@@ -4272,6 +4300,9 @@ hr {
   }
   .cs_hero.cs_style_1 .cs_hero_thumbnail {
     transform: translateX(40px);
+  }
+  .cs_hero.cs_style_1 .cs_hero_thumbnail .cs_hero_lab_card {
+    margin-right: -28px;
   }
 }
 @media (max-width: 1199px) {

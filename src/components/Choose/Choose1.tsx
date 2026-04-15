@@ -12,7 +12,7 @@ const Choose1 = () => {
           <div className="row cs_gap_y_50 position-relative z-1">
             <div className="col-lg-6 order-lg-2">
               <div className="cs_card_thumbnail">
-                <img src="/assets/img/phone-img-2.png" alt="" />
+                <img src="/pexels-tima-miroshnichenko-9574502.jpg" alt="Lab staff working at workstation" />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">

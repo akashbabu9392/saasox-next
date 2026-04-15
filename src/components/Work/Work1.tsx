@@ -17,7 +17,7 @@ const Work1 = () => {
                 <p className="cs_card_desc cs_mb_22">our platform maps directly to how your lab already works — just without the paper.</p>
               </div>
               <div className="cs_process_thumbnail z-1">
-                <img src="/assets/img/human-1.png" alt="" />
+                <img src="/chemist-using-touchpad.jpg" alt="Technician entering lab data on tablet" />
               </div>
               <div className="cs_vector_shape position-absolute bottom-0 start-0">
                 <img src="/assets/img/vector-7.svg" alt="" />

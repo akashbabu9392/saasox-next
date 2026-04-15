@@ -11,7 +11,14 @@ const HeroBanner3 = () => {
           <div className="row cs_gap_y_40 align-items-center">
             <div className="col-lg-5 order-lg-2">
               <div className="cs_hero_thumbnail">
-                <img src="/assets/img/hero-img-1.png" alt="our platform application" />
+                <div className="cs_hero_lab_card" aria-hidden="true">
+                  <img
+                    className="cs_hero_lab_card_img"
+                    src="/male-researcher-focuses-experiment-data-research-study-laboratory-equipment-chemical.jpg"
+                    alt="Scientist using tablet in lab"
+                  />
+                  <div className="cs_hero_lab_card_overlay" />
+                </div>
               </div>
             </div>
             <div className="col-lg-7 order-lg-1">

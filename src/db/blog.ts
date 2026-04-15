@@ -27,8 +27,8 @@ export const blogDb: BlogPostRecord[] = [
     metaTitle: "USP 797 Revised Standards: What Your Lab Needs to Know in 2026",
     metaDescription:
       "The 2023 revision to USP Chapter 797 significantly expanded environmental monitoring requirements.",
-    bannerImageSrc: "/assets/img/post-img-10.jpg",
-    bannerImageAlt: "Lab compliance",
+    bannerImageSrc: "/confident-asian-microbiologist-posing-photography.jpg",
+    bannerImageAlt: "Microbiologist in lab setting",
     postedDay: "15",
     postedMonth: "Mar",
     postedYear: "2026",
@@ -97,8 +97,8 @@ export const blogDb: BlogPostRecord[] = [
     metaTitle: "Why Your Pharmacy Clients Keep Calling (And How to Fix It)",
     metaDescription:
       "The average environmental monitoring lab fields 15–20 status inquiry calls per week from pharmacy QA managers.",
-    bannerImageSrc: "/assets/img/post-img-4.jpg",
-    bannerImageAlt: "Client communication",
+    bannerImageSrc: "/female-scientist-typing-her-computer-data-from-last-scientific-tests-chemistry-lab.jpg",
+    bannerImageAlt: "Scientist typing at computer in lab",
     postedDay: "28",
     postedMonth: "Feb",
     postedYear: "2026",
@@ -155,8 +155,8 @@ export const blogDb: BlogPostRecord[] = [
     metaTitle: "Chain of Custody Best Practices for USP 797 Labs",
     metaDescription:
       "A proper chain of custody is the foundation of defensible test results.",
-    bannerImageSrc: "/assets/img/post-img-5.jpg",
-    bannerImageAlt: "Chain of custody",
+    bannerImageSrc: "/close-up-hand-writing-notes.jpg",
+    bannerImageAlt: "Hands writing lab notes on clipboard",
     postedDay: "12",
     postedMonth: "Feb",
     postedYear: "2026",
