@@ -47,13 +47,6 @@ const Work1 = () => {
                 <h3 className="cs_fs_24 cs_semibold cs_mb_4">Generate the Report</h3>
                 <p className="mb-0">One click generates a professional PDF with electronic signatures, historical trending charts, floor plan, and full organism descriptions — ready for review.</p>
               </div>
-              <div className="cs_iconbox cs_style_2">
-                <span className="cs_iconbox_icon cs_bg_2 cs_center cs_mb_18">
-                <span className="cs_fs_14 cs_bold">04</span>
-                </span>
-                <h3 className="cs_fs_24 cs_semibold cs_mb_4">Deliver to Client</h3>
-                <p className="mb-0">Approve and publish the report. Your client is instantly notified and can access it through their self-service portal. No emails, no phone calls.</p>
-              </div>
             </div>
           </div>
         </div>

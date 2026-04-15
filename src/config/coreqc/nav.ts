@@ -1,5 +1,3 @@
-import { coreQcBrand } from "./brand";
-
 export const coreQcNav = {
   homeLabel: "Home",
   homeVersions: [

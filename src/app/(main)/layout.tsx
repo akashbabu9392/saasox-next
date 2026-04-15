@@ -1,4 +1,4 @@
-import Footer1 from "@/components/Footer/Footer1";
+import FooterCompact from "@/components/Footer/FooterCompact";
 import Header3 from "@/components/Header/Header3";
 
 export default function MainLayout({
@@ -10,7 +10,7 @@ export default function MainLayout({
     <div className="main-page-area">
       <Header3 />
       {children}
-      <Footer1 />
+      <FooterCompact />
     </div>
   );
 }

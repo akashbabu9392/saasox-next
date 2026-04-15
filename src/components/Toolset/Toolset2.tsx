@@ -35,7 +35,7 @@ const Toolset2 = () => {
             <div className="cs_section_heading cs_style_1 cs_mb_37">
               <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
                 <img src="/assets/img/icons/star-1.svg" alt="" />
-                <span>Integrations</span>
+                <span>Our Toolset</span>
                 <img src="/assets/img/icons/star-1.svg" alt="" />
               </div>
               <h2 className="cs_section_title cs_fs_48 cs_semibold text-capitalize mb-0 wow zoomIn">Connects to the tools your lab relies on</h2>

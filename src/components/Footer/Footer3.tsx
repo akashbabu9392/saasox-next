@@ -30,7 +30,7 @@ const Footer3 = () => {
           <div className="cs_footer_widget_wrapper">
             <div className="cs_footer_widget cs_text_widget">
               <div className="cs_brand cs_mb_32">
-                <span className="cs_fs_24 cs_semibold">{coreQcBrand.name} <span className="cs_fs_16">by {coreQcBrand.company}</span></span>
+                <img className="cs_brand_logo" src={coreQcBrand.logoDarkSrc} alt={coreQcBrand.name} />
               </div>
               <p className="cs_mb_32">{coreQcBrand.productDescriptionOneLine}</p>
               <div className="cs_social_links cs_style_1 cs_heading_color">

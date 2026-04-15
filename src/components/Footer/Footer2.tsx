@@ -7,11 +7,11 @@ const Footer2 = () => {
       <div className="cs_height_130 cs_height_lg_80"></div>
       <div className="container">
         <div className="cs_footer_top position-relative">
-          <ul className="cs_location_list cs_mp_0">
+          <ul className="cs_location_list cs_footer_compact_contacts cs_mp_0">
             <li>
               <span className="cs_location_icon cs_center cs_heading_color cs_radius_100">
               <i className="bi bi-geo-alt-fill"></i></span>
-              <div className="cs_location_info cs_fs_18">
+              <div className="cs_location_info cs_fs_18 text-center">
                 <p className="cs_fs_14 cs_theme_color_4 mb-0">ADDRESS</p>
                 <p className="cs_white_color mb-0">{coreQcContact.address}</p>
               </div>
@@ -19,17 +19,9 @@ const Footer2 = () => {
             <li>
               <span className="cs_location_icon cs_center cs_heading_color cs_radius_100">
               <i className="bi bi-envelope-fill"></i></span>
-              <div className="cs_location_info cs_fs_18">
+              <div className="cs_location_info cs_fs_18 text-center">
                 <p className="cs_fs_14 cs_theme_color_4 mb-0">EMAIL</p>
                 <a href={`mailto:${coreQcContact.email}`} aria-label="Send mail link">{coreQcContact.email}</a>
-              </div>
-            </li>
-            <li>
-              <span className="cs_location_icon cs_center cs_heading_color cs_radius_100">
-              <i className="bi bi-telephone-fill"></i></span>
-              <div className="cs_location_info cs_fs_18">
-                <p className="cs_fs_14 cs_theme_color_4 mb-0">CALL</p>
-                <a href={`tel:${coreQcContact.phoneTel}`} aria-label="Make a call link">{coreQcContact.phone}</a>
               </div>
             </li>
           </ul>
@@ -37,7 +29,7 @@ const Footer2 = () => {
         <div className="cs_footer_main cs_radius_30">
           <div className="cs_footer_desc">
             <div className="cs_brand">
-              <span className="cs_fs_24 cs_semibold cs_white_color">{coreQcBrand.name}</span>
+              <img className="cs_brand_logo" src={coreQcBrand.logoDarkSrc} alt={coreQcBrand.name} />
             </div>
             <div className="cs_footer_desc_text">The cloud LIMS for environmental monitoring labs. {coreQcBrand.productDescriptionOneLine}</div>
           </div>

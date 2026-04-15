@@ -15,7 +15,7 @@ const HeroBanner3 = () => {
               </div>
             </div>
             <div className="col-lg-7 order-lg-1">
-              <div className="cs_hero_text cs_section_heading cs_style_1 position-relative z-2">
+              <div className="cs_hero_text cs_section_heading cs_style_1 position-relative z-2 cs_hero_text_shift">
                 <p className="cs_hero_subtitle cs_white_color cs_heading_font cs_mb_22 text-center text-lg-start">
                   <span className="cs_theme_color_4">
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -49,9 +49,8 @@ export default function Header3({ variant }:{ variant?: string }) {
             <div className="cs_main_header_left">
             <Link className="cs_site_branding d-inline-flex flex-column align-items-start" href="/">
                 <span className="d-flex align-items-center gap-2">
-                  <span className="cs_fs_18 cs_semibold cs_heading_color">{coreQcBrand.name}</span>
+                  <img className="cs_site_logo" src={coreQcBrand.logoLightSrc} alt={coreQcBrand.name} />
                 </span>
-                <span className="cs_fs_12 cs_heading_color opacity-75">by {coreQcBrand.company}</span>
               </Link>
               </div>
               <div className="cs_main_header_center">

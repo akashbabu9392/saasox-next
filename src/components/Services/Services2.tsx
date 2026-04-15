@@ -1,4 +1,7 @@
+ "use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { serviceDetailsDb } from "@/db/services";
 
 const Services2 = () => {
@@ -13,6 +16,7 @@ const Services2 = () => {
       ];
       const detailsHref = `/service/${serviceDetailsDb[0]?.slug ?? "service-details"}`;
 
+      const [activeIndex, setActiveIndex] = useState<number>(0);
 
     return (
 <section className="position-relative">
@@ -31,7 +35,18 @@ const Services2 = () => {
 
         {teamContent.map((item, i) => (
           <div key={i} className="col-xl-4 col-md-6">
-            <div className="cs_iconbox cs_style_4 cs_radius_15 position-relative overflow-hidden">
+            <div
+              className={`cs_iconbox cs_style_4 cs_radius_15 position-relative overflow-hidden ${i === activeIndex ? "is-active" : ""}`}
+              role="button"
+              tabIndex={0}
+              onClick={() => setActiveIndex(i)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setActiveIndex(i);
+                }
+              }}
+            >
               <div className="cs_iconbox_content cs_radius_15 position-relative">
                 <div className="cs_iconbox_header cs_mb_17">
                   <span className="cs_iconbox_icon cs_heading_color">

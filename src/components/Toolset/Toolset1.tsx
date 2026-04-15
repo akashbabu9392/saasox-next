@@ -1,21 +1,7 @@
-import Link from 'next/link';
+import Link from "next/link";
+import { integrations } from "@/config/integrations";
 
 const Toolset1 = () => {
-
-    const brandContent = [
-        {img:'/assets/img/icons/slack.svg', title:'PDF Engine', alt:'PDF report engine'},
-        {img:'/assets/img/icons/dropbox.svg', title:'AWS S3', alt:'Cloud storage'},
-        {img:'/assets/img/icons/linkedin.svg', title:'Socket.IO', alt:'Real-time'},
-        {img:'/assets/img/icons/hubspot.svg', title:'BullMQ + Redis', alt:'Email queue'},
-        {img:'/assets/img/icons/whatsapp.svg', title:'USP 797', alt:'Compliance'},
-        {img:'/assets/img/icons/discord.svg', title:'21 CFR Part 11', alt:'Regulatory'},
-        {img:'/assets/img/icons/zoom.svg', title:'REST API', alt:'API'},
-        {img:'/assets/img/icons/github.svg', title:'Webhooks', alt:'Webhooks'},
-        {img:'/assets/img/icons/mailchip.svg', title:'ISO 17025', alt:'ISO'},
-        {img:'/assets/img/icons/shopify.svg', title:'Cloudinary', alt:'Images'},
-        {img:'/assets/img/icons/googledrive.svg', title:'WeasyPrint', alt:'PDF'},
-        {img:'/assets/img/icons/notion.svg', title:'PostgreSQL', alt:'Database'},
-      ];
 
     return (
  <section className="cs_gray_bg_2">
@@ -23,10 +9,10 @@ const Toolset1 = () => {
       <div className="container">
         <div className="cs_toolset_content cs_center_column position-relative">
           <div className="cs_toolset_logos">
-            {brandContent.map((item, i) => (
+            {integrations.map((item, i) => (
             <div key={i} className="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
               <span className="cs_iconbox_icon cs_mb_14">
-              <img src={item.img} alt={item.alt} />
+              <img src={item.iconSrc} alt={item.subtitle} />
               </span>
               <p className="cs_medium mb-0">{item.title}</p>
             </div>
@@ -37,7 +23,7 @@ const Toolset1 = () => {
             <div className="cs_section_heading cs_style_1 cs_mb_20">
               <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
                 <img src="/assets/img/icons/star-1.svg" alt="" />
-                <span>Integrations</span>
+                <span>Our Toolset</span>
                 <img src="/assets/img/icons/star-1.svg" alt="" />
               </div>
               <h2 className="cs_section_title cs_fs_48 cs_semibold text-capitalize mb-0 wow fadeInUp">Infrastructure Your Lab Already Relies On</h2>

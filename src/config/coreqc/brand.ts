@@ -3,6 +3,10 @@ export const coreQcBrand = {
   company: "RainerTek",
   tagline: "The Lab OS for Environmental Monitoring",
   domain: "biosure.io",
+  logoLightSrc: "/BiosureLab-logo.svg",
+  logoDarkSrc: "/BiosureLab-logo-dark.svg",
+  footerDescription:
+    "Laboratory information management that respects both compliance and velocity.",
   productDescriptionOneLine:
     "Cloud LIMS purpose-built for USP 797 environmental monitoring labs.",
   productDescriptionShort:
@@ -18,8 +22,8 @@ export const coreQcBrand = {
 } as const;
 
 export const coreQcContact = {
-  phone: "+1 (555) 010-0199",
-  phoneTel: "+15550100199",
-  email: "hello@biosure.io",
+  phone: "+208-555-0112",
+  phoneTel: "+2085550112",
+  email: "info@biosure.com",
   address: "United States",
 } as const;

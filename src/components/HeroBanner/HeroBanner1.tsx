@@ -26,9 +26,6 @@ const HeroBanner1 = () => {
                     <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
                     </Link>
                 </div>
-                <p className="cs_fs_14 cs_heading_color cs_mt_20 mb-0">
-                  ✓ No credit card required &nbsp; ✓ Setup in 1 day &nbsp; ✓ Client portal always free &nbsp; ✓ USP 797 aligned
-                </p>
                 <div className="cs_hero_shape_1 position-absolute">
                     <img src="/assets/img/hero-shape-1.svg" alt="" />
                 </div>

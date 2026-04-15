@@ -12,11 +12,6 @@ export const coreQcFaqItems: FaqItem[] = [
       "No. our platform is fully cloud-based. Your lab users and clients access it through any web browser. No software to install, no servers to manage. We handle all updates and infrastructure.",
   },
   {
-    question: "Is the client portal really free?",
-    answer:
-      "Yes — forever. Client portal users have always-free access on all plans, including the Free tier. You only pay for your lab's internal users. This is a permanent product decision, not a promotional offer.",
-  },
-  {
     question: "How long does setup take?",
     answer:
       "Most labs are fully operational within 1–3 days. We guide you through importing your client companies, configuring your lab settings, and generating your first report. No months-long implementation process.",
@@ -35,10 +30,5 @@ export const coreQcFaqItems: FaqItem[] = [
     question: "What happens to my data if I cancel?",
     answer:
       "Your data belongs to you. We provide a full data export in CSV/Excel format before account closure. We retain your data for 30 days post-cancellation.",
-  },
-  {
-    question: "Can I try our platform before paying?",
-    answer:
-      "Yes. The Free plan is available with no time limit and no credit card required. You can also start a 14-day free trial of the Starter or Professional plan with full features unlocked.",
   },
 ];

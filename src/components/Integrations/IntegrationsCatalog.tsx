@@ -89,6 +89,47 @@ const IntegrationsCatalog = () => {
       ],
     },
     {
+      title: "Reshape",
+      items: [
+        {
+          name: "Plate Imaging",
+          description:
+            "Automated, high-resolution plate imaging with consistent capture across experiments and environments.",
+          tags: ["Built-in"],
+        },
+        {
+          name: "Colony Counting",
+          description:
+            "AI-powered colony detection and accurate counting to reduce manual errors and save time.",
+          tags: ["Built-in"],
+        },
+        {
+          name: "Real-Time Analysis",
+          description:
+            "Process images instantly and generate insights without delays or manual intervention.",
+          tags: ["Built-in"],
+        },
+        {
+          name: "Data & Reporting",
+          description:
+            "Structured outputs with export-ready reports for analysis, compliance, and sharing.",
+          tags: ["Built-in"],
+        },
+        {
+          name: "API Access",
+          description:
+            "Retrieve images, counts, and metadata programmatically for seamless workflow integration.",
+          tags: ["Built-in"],
+        },
+        {
+          name: "Experiment Traceability",
+          description:
+            "Track plates, wells, and results with full traceability across experiments.",
+          tags: ["Built-in"],
+        },
+      ],
+    },
+    {
       title: "Coming Soon",
       items: [
         {
@@ -120,7 +161,7 @@ const IntegrationsCatalog = () => {
         <div className="cs_section_heading cs_style_1 cs_center_column text-center cs_mb_60">
           <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
             <img src="/assets/img/icons/star-1.svg" alt="" />
-            <span>Integrations</span>
+            <span>Our Toolset</span>
             <img src="/assets/img/icons/star-1.svg" alt="" />
           </div>
           <h1 className="cs_section_title cs_fs_48 cs_semibold mb-0">

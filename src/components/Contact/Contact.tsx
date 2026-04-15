@@ -1,3 +1,5 @@
+import { coreQcContact } from "@/config/coreqc/brand";
+
 const Contact = () => {
 
     const bgImage = '/assets/img/contact-img-1.jpg';
@@ -14,22 +16,11 @@ const Contact = () => {
                 <li>
                   <div className="cs_iconbox cs_style_6">
                     <span className="cs_iconbox_icon cs_center cs_radius_100 position-relative">
-                    <img src="/assets/img/icons/call.svg" alt="Telephone icon" />
-                    </span>
-                    <div className="cs_iconbox_info">
-                      <p className="cs_white_color cs_heading_font cs_mb_4">Call Us 7/24</p>
-                      <a href="tel:+2085550112" aria-label="Phone call button" className="cs_fs_24 cs_bold cs_white_color cs_heading_font">+208-555-0112</a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="cs_iconbox cs_style_6">
-                    <span className="cs_iconbox_icon cs_center cs_radius_100 position-relative">
                     <img src="/assets/img/icons/email.svg" alt="Email icon" />
                     </span>
                     <div className="cs_iconbox_info">
                       <p className="cs_white_color cs_heading_font cs_mb_4">Make a Quote</p>
-                      <a href="mailto:Infotek@gmail.com" aria-label="Phone call button" className="cs_fs_24 cs_bold cs_white_color cs_heading_font">Infotek@gmail.com</a>
+                      <a href={`mailto:${coreQcContact.email}`} aria-label="Email button" className="cs_fs_24 cs_bold cs_white_color cs_heading_font">{coreQcContact.email}</a>
                     </div>
                   </div>
                 </li>

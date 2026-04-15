@@ -22,8 +22,8 @@ export const coreQcFooter = {
     { label: "Contact", href: "/contact" },
   ],
   legalLinks: [
-    { label: "Privacy Policy", href: "/contact" },
-    { label: "Terms of Service", href: "/contact" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms & Conditions", href: "/terms-and-conditions" },
     { label: "Security", href: "/contact" },
     { label: "HIPAA Notice", href: "/contact" },
   ],

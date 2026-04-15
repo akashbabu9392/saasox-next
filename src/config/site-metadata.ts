@@ -8,5 +8,9 @@ export const siteMetadata: Metadata = {
     template: `%s | ${coreQcBrand.name}`,
   },
   description: coreQcBrand.productDescriptionOneLine,
+  icons: {
+    icon: "/BiosureLab-favicon.svg",
+    shortcut: "/BiosureLab-favicon.svg",
+  },
 };
 

@@ -32,7 +32,7 @@ const Footer1 = () => {
           <div className="cs_footer_widget_wrapper">
             <div className="cs_footer_widget cs_text_widget">
               <div className="cs_brand cs_mb_32">
-                <span className="cs_fs_24 cs_semibold cs_white_color d-block">{coreQcBrand.name} <span className="cs_fs_16 cs_normal">by {coreQcBrand.company}</span></span>
+                <img className="cs_brand_logo" src={coreQcBrand.logoDarkSrc} alt={coreQcBrand.name} />
               </div>
               <p className="cs_mb_32">The cloud LIMS for environmental monitoring labs.</p>
               <div className="cs_social_links cs_style_1 cs_heading_color">
