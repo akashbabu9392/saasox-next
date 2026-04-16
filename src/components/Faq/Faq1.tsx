@@ -46,8 +46,8 @@ const Faq1 = () => {
               </div>
               <h2 className="cs_section_title cs_fs_48 cs_semibold wow fadeInLeft">Everything You Need to Know</h2>
               <p className="cs_card_desc cs_mb_32">Straight answers on setup, compliance, plans, and data — before you start your trial.</p>
-              <Link href="/faq" aria-label="FAQ page link" className="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
-              <span>View all FAQ</span>
+              <Link href="/contact" aria-label="Contact page link" className="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+              <span>Ask a Question</span>
               <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
               </Link>
             </div>

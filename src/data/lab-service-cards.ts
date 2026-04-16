@@ -19,7 +19,7 @@ export const labServiceCards: LabServiceCard[] = [
     ],
   },
   {
-    slug: "sample-results-organism-id",
+    slug: "sample-testing-results",
     addClass: "cs_bg_1",
     iconSrc: "/assets/img/icons/cloud-computing.svg",
     title: "Sample Results & Organism ID",
@@ -30,7 +30,7 @@ export const labServiceCards: LabServiceCard[] = [
     ],
   },
   {
-    slug: "one-click-pdf-reports",
+    slug: "pdf-report-generator",
     addClass: "cs_bg_2",
     iconSrc: "/assets/img/icons/quality-assurance.svg",
     title: "One-Click PDF Reports",
@@ -40,7 +40,7 @@ export const labServiceCards: LabServiceCard[] = [
     ],
   },
   {
-    slug: "free-client-portal",
+    slug: "client-portal",
     addClass: "cs_bg_3",
     iconSrc: "/assets/img/icons/security.svg",
     title: "Free Client Portal",
@@ -50,14 +50,14 @@ export const labServiceCards: LabServiceCard[] = [
     ],
   },
   {
-    slug: "historical-trending",
+    slug: "scheduling-calendar",
     addClass: "cs_bg_00",
     iconSrc: "/assets/img/icons/advanced-tracking.svg",
     title: "Historical Trending",
     featureList: ["Z-scores across sampling events", "Catch excursions before action levels"],
   },
   {
-    slug: "real-time-notifications",
+    slug: "role-based-access-control",
     addClass: "cs_bg_1",
     iconSrc: "/assets/img/icons/analytics.svg",
     title: "Real-Time Notifications",

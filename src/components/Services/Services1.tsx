@@ -32,7 +32,7 @@ const Services1 = () => {
               title={card.title}
               featureList={card.featureList}
               btnname={uiText.actions.readMore}
-              btnurl={`/service/${card.slug}`}
+              btnurl={`/features/${card.slug}`}
             />
           ))}
 

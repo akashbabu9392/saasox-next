@@ -2,7 +2,7 @@ import { coreQcBrand } from "./brand";
 
 export const coreQcFooter = {
   productLinks: [
-    { label: "Features", href: "/service" },
+    { label: "Features", href: "/features" },
     { label: "Integrations", href: "/integrations" },
     { label: coreQcBrand.startFreeNavLabel, href: coreQcBrand.signInHref },
     { label: "Changelog", href: "/contact" },

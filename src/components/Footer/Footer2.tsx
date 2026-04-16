@@ -52,7 +52,7 @@ const Footer2 = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/service" aria-label="Features page link">
+                <Link href="/features" aria-label="Features page link">
                   Features
                 </Link>
               </li>

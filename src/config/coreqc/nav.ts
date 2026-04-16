@@ -1,10 +1,6 @@
 export const coreQcNav = {
   homeLabel: "Home",
-  homeVersions: [
-    { label: "Home Version 1", href: "/" },
-    { label: "Home Version 2", href: "/home-v2" },
-    { label: "Home Version 3", href: "/home3" },
-  ],
+  homeVersions: [{ label: "Home", href: "/" }],
   primaryLinks: [
     { label: "Features", href: "/features" },
     { label: "Integrations", href: "/integrations" },
