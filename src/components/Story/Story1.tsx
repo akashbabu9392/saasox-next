@@ -52,7 +52,7 @@ const Story1 = () => {
                   <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
                   </Link>
                   <div className="cs_client_info_wrapper">
-                    <img src="/assets/img/customers-group-2.png" alt="" />
+                    <img src="/customers-group.png" alt="Pilot lab customers" />
                     <div>
                       <h3 className="cs_fs_18 cs_normal mb-0">10+ pilot labs</h3>
                       <p className="mb-0"><span className="cs_theme_color_5"><i className="bi bi-star-fill"></i></span> Design partners</p>
