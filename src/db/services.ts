@@ -19,7 +19,7 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
     metaTitle: "Chain of Custody | Sample to Report",
     metaDescription:
       "Digital chain-of-custody forms with sample locations, media lot tracking, and configurable sample ID patterns.",
-    bannerImageSrc: "/assets/img/service_img-1.jpg",
+    bannerImageSrc: "/pexels-pavel-danilyuk-8442264.jpg",
     bannerImageAlt: "Chain of custody workflow",
     introParagraphs: [
       "Move chain-of-custody from paper, email threads, and spreadsheets into one structured workflow built for environmental monitoring labs.",
@@ -46,7 +46,8 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
     metaTitle: "Sample Results & Organism ID | Structured Lab Entry",
     metaDescription:
       "One structured screen for CFU counts, incubation parameters, plate images, and organism identification.",
-    bannerImageSrc: "/assets/img/service_img-1.jpg",
+    bannerImageSrc:
+      "/asian-male-and-female-scientis-work-together-in-th-2026-01-09-11-45-05-utc.jpg",
     bannerImageAlt: "Sample results entry",
     introParagraphs: [
       "Technicians need a fast, consistent way to enter results without jumping between documents or disconnected tools.",
@@ -73,7 +74,7 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
     metaTitle: "One-Click PDF Reports | USP 797",
     metaDescription:
       "Generate professional USP 797 lab reports instantly with e-signatures, trending, and floor plans.",
-    bannerImageSrc: "/assets/img/service_img-1.jpg",
+    bannerImageSrc: "/pexels-thisisengineering-19895787.jpg",
     bannerImageAlt: "PDF report preview",
     introParagraphs: [
       "Stop rebuilding reports manually in Word. Generate professional PDF reports directly from your CoC and results data.",
@@ -100,7 +101,7 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
     metaTitle: "Free Client Portal | Self-Service Access",
     metaDescription:
       "Give pharmacy clients self-service access to reports, CoC, and trends with no extra fee.",
-    bannerImageSrc: "/assets/img/service_img-1.jpg",
+    bannerImageSrc: "/pexels-silverkblack-36712839.jpg",
     bannerImageAlt: "Client portal",
     introParagraphs: [
       "Reduce back-and-forth emails by giving clients a secure portal for everything they need — always available, always up to date.",
@@ -127,7 +128,8 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
     metaTitle: "Historical Trending | Catch Excursions Early",
     metaDescription:
       "Track Z-scores across sampling events and catch excursions before action levels.",
-    bannerImageSrc: "/assets/img/service_img-1.jpg",
+    bannerImageSrc:
+      "/knitting-and-weaving-machines-2026-01-08-23-54-03-utc.jpg",
     bannerImageAlt: "Historical trending",
     introParagraphs: [
       "Trending is only as good as the underlying data. With structured CoC and results, you can reliably track patterns over time.",
@@ -154,7 +156,7 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
     metaTitle: "Real-Time Notifications | Alerts That Matter",
     metaDescription:
       "Get Socket.IO and email alerts with per-user notification preferences.",
-    bannerImageSrc: "/assets/img/service_img-1.jpg",
+    bannerImageSrc: "/pexels-ketut-subiyanto-4428994.jpg",
     bannerImageAlt: "Real-time notifications",
     introParagraphs: [
       "Stay ahead of critical updates without living in your inbox. Get timely alerts when submissions, results, or reviews need attention.",
