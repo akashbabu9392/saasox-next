@@ -81,7 +81,7 @@ const FeatureDetails = ({ data }: { data: FeatureDetailsRecord }) => {
                 </Link>
               </div>
 
-              <div className="cs_card cs_style_1 cs_gray_bg_2 cs_radius_20 p-6">
+              <div className="cs_card cs_style_1 cs_gray_bg_2 cs_radius_20 p-4">
                 <h3 className="cs_fs_24 cs_semibold cs_mb_12">Overview</h3>
                 <p className="mb-0">{data.overview}</p>
               </div>

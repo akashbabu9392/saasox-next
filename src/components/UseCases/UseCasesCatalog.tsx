@@ -49,7 +49,9 @@ const UseCasesCatalog = ({ useCases }: Props) => {
                 </div>
 
                 <div className="cs_iconbox_info">
-                  <p className="cs_use_case_card_desc cs_mb_25">{uc.overview}</p>
+                  <p className="cs_use_case_card_desc cs_mb_25">
+                    {uc.overview}
+                  </p>
 
                   <Link
                     href={`/use-cases/${uc.slug}`}

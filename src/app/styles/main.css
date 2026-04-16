@@ -3825,6 +3825,28 @@ hr {
 .cs_sidebar.cs_style_1 .cs_sidebar_widget:not(:last-child) {
   margin-bottom: 30px;
 }
+
+/* Make sidebar widgets feel like modern SaaS cards */
+.cs_sidebar_widget.cs_gray_bg.cs_radius_10 {
+  border: 1px solid rgba(216, 221, 225, 0.9);
+  background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02), 0 16px 50px rgba(1, 50, 40, 0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.cs_sidebar_widget.cs_gray_bg.cs_radius_10:hover {
+  transform: translateY(-3px);
+  border-color: rgba(115, 65, 241, 0.35);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02), 0 24px 80px rgba(1, 50, 40, 0.12);
+}
+
+/* Hero banner on details pages */
+.cs_post_banner {
+  border: 1px solid rgba(216, 221, 225, 0.9);
+  background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02), 0 18px 60px rgba(1, 50, 40, 0.06);
+  transition: box-shadow 0.22s ease, border-color 0.22s ease;
+}
 .cs_sidebar.cs_style_1 .cs_service_category_list a {
   display: flex;
   align-items: center;

@@ -110,12 +110,17 @@ const UseCaseDetails = ({ data }: { data: UseCaseDetailsRecord }) => {
               </div>
 
               <h3 className="cs_fs_24 cs_semibold cs_mb_12">Overview</h3>
-              <p>{data.overview}</p>
+              <div className="cs_card cs_style_1 cs_gray_bg_2 cs_radius_20 p-4">
+                <h3 className="cs_fs_24 cs_semibold cs_mb_12">Overview</h3>
+                <p className="mb-0">{data.overview}</p>
+              </div>
 
               <div className="cs_height_20"></div>
               {data.body.map((section, idx) => (
                 <div key={`${section.type}-${idx}`} className="cs_mb_20">
-                  <SectionRenderer section={section} />
+                  <div className="cs_card cs_style_1 cs_gray_bg_2 cs_radius_20 p-4">
+                    <SectionRenderer section={section} />
+                  </div>
                 </div>
               ))}
             </div>
