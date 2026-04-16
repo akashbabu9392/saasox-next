@@ -13,7 +13,6 @@ export const coreQcFooter = {
     { label: "Hospital Cleanrooms", href: "/use-cases" },
     { label: "Environmental Labs", href: "/use-cases" },
     { label: "Food Safety Labs", href: "/use-cases" },
-    { label: "Cannabis Testing Labs", href: "/use-cases" },
   ],
   companyLinks: [
     { label: "About RainerTek", href: "/about" },

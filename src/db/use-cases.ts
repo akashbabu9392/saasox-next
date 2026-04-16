@@ -187,48 +187,6 @@ export const useCaseDetailsDb: UseCaseDetailsRecord[] = [
       },
     ],
   },
-  {
-    slug: "cannabis-testing-labs",
-    breadcrumbTitle: "Cannabis Testing Labs",
-    metaTitle: "Cannabis Testing Labs (Coming) | BiosureLab",
-    metaDescription:
-      "Chain-of-custody and reporting for state-regulated cannabis microbiology and chemistry.",
-    heroTitle: "Cannabis Testing Labs (Coming)",
-    heroSubtitle:
-      "Chain-of-custody and reporting for state-regulated cannabis microbiology and chemistry.",
-    overview:
-      "State-regulated cannabis testing requires rigorous chain-of-custody documentation, accredited test methods, and report formats that satisfy both state regulators and dispensary clients. BiosureLab's configurable template system — currently in development — will support cannabis microbiology and chemistry test types, bringing the same digital workflow that compounding pharmacy labs rely on to cannabis testing operations.",
-    whoItsFor:
-      "Cannabis testing labs, dispensary QC programs, and state-licensed testing facilities that perform microbiology and chemistry testing on cannabis products.",
-    body: [
-      { type: "heading", text: "What's Coming for Cannabis Labs" },
-      { type: "heading", text: "Configurable Cannabis Test Types" },
-      {
-        type: "paragraph",
-        text: "Using the Template Builder (launching Q3 2026), cannabis labs will be able to define test types for their specific accredited methods: total yeast and mold count, total aerobic count, pathogen panels (Salmonella, E. coli, Aspergillus), heavy metals, pesticides, and potency. Each test type will have its own intake form and report template.",
-      },
-      { type: "heading", text: "Chain-of-Custody for Cannabis Samples" },
-      {
-        type: "paragraph",
-        text: "The CoC workflow — digital submission, media/reagent lot tracking, laboratory receipt acknowledgment, and sample tracking — will be adapted for cannabis sample intake. State-required chain-of-custody documentation, including sampler identification and chain-of-custody transfer signatures, will be supported.",
-      },
-      { type: "heading", text: "Compliant Report Generation" },
-      {
-        type: "paragraph",
-        text: "Cannabis test reports must meet specific state-mandated format requirements that vary by jurisdiction. The Template Builder will allow cannabis labs to configure report templates that match their state's required output format, with fields mapped to their defined test variables.",
-      },
-      { type: "heading", text: "Client Portal for Dispensaries" },
-      {
-        type: "paragraph",
-        text: "Dispensary clients will access their test results through the same self-service portal that pharmacy clients use today — with instant notifications when reports are published, full report history, and the ability to download compliance documentation for their state reporting obligations.",
-      },
-      { type: "heading", text: "Current Status" },
-      {
-        type: "paragraph",
-        text: "Cannabis testing lab support is on the Phase 2 roadmap, dependent on the Template Builder launch targeting Q3 2026. Labs interested in the cannabis module can contact the BiosureLab team to be added to the waitlist and provide input on state-specific requirements.",
-      },
-    ],
-  },
 ];
 
 export function getUseCaseDetailsBySlug(slug: string) {
