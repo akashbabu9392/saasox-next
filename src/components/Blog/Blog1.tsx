@@ -20,18 +20,13 @@ const Blog1 = () => {
         autoplaySpeed: 4000,        
         responsive: [
           {
-            breakpoint: 1399,
+            breakpoint: 992,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
             }
           },
           {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 3,
-            }
-          },{
-            breakpoint: 575,
+            breakpoint: 576,
             settings: {
               slidesToShow: 1,
             }
@@ -81,7 +76,7 @@ const Blog1 = () => {
             </div>
           </div>
         </div>
-        <div className="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="3" data-add-slides="3">
+        <div className="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="1" data-md-slides="2" data-lg-slides="3" data-add-slides="3">
           <div className="cs_slider_wrapper cs_slider_gap_301">
             <Slider ref={sliderRef} {...settings}>
             {blogContent.map((item, i) => {

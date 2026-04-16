@@ -4,10 +4,15 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "slick-carousel/slick/slick.css";
 import "./styles/main.css";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { siteMetadata } from "@/config/site-metadata";
 
 export const metadata: Metadata = siteMetadata;
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,
