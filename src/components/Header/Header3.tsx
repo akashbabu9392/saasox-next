@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Nav from './Nav';
 import { coreQcBrand } from "@/config/coreqc";
 import { coreQcNav } from "@/config/coreqc";
@@ -9,6 +10,8 @@ export default function Header3({ variant }:{ variant?: string }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState<string>("");
   const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  const pathname = usePathname();
+  const shouldShowSignIn = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,14 +75,15 @@ export default function Header3({ variant }:{ variant?: string }) {
                   <Nav setMobileToggle={setMobileToggle} />
                 </div>
             </div>
-            <div className="cs_main_header_right">
-              <div className="header-btn d-flex align-items-center gap-3 flex-wrap">
-                <Link href={coreQcBrand.signInHref} className="cs_fs_14 cs_bold cs_white_color text-uppercase">
-                  {coreQcBrand.signInLabel}
-                </Link>
-
+            {shouldShowSignIn && (
+              <div className="cs_main_header_right">
+                <div className="header-btn d-flex align-items-center gap-3 flex-wrap">
+                  <Link href={coreQcBrand.signInHref} className="cs_fs_14 cs_bold cs_white_color text-uppercase">
+                    {coreQcBrand.signInLabel}
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
