@@ -4750,10 +4750,18 @@ hr {
   border-radius: 20px 0 0 20px;
   position: sticky;
   top: 20px;
+  overflow: hidden;
 }
 .cs_card.cs_style_2 .cs_card_thumbnail img {
   width: 100%;
   border-radius: inherit;
+}
+.cs_card.cs_style_2 .cs_card_thumbnail .cs_about_story_image {
+  display: block;
+  min-height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 72% center;
 }
 .cs_card.cs_style_2 .cs_service_item {
   max-width: 600px;
@@ -4806,6 +4814,10 @@ hr {
   .cs_card.cs_style_2 .cs_card_thumbnail {
     width: 100%;
     position: initial;
+  }
+  .cs_card.cs_style_2 .cs_card_thumbnail .cs_about_story_image {
+    aspect-ratio: 16 / 10;
+    object-position: 68% center;
   }
   .cs_card.cs_style_2 .cs_service_item {
     max-width: 100%;

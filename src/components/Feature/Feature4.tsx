@@ -10,7 +10,11 @@ const Feature4 = () => {
           <div className="row cs_gap_y_40">
             <div className="col-lg-6 order-lg-2">
               <div className="cs_card_thumbnail">
-                <img src="/assets/img/dashboard-2.png" alt="our platform" />
+                <img
+                  className="cs_about_story_image"
+                  src="/scientist-using-computer-in-lab-2026-01-09-09-15-50-utc.jpg"
+                  alt="Scientist working in a laboratory"
+                />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">
