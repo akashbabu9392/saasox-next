@@ -13,10 +13,7 @@ const FeatureDetails = ({ data }: { data: FeatureDetailsRecord }) => {
                 <h3 className="cs_sidebar_widget_title cs_fs_22 cs_semibold cs_mb_22">
                   Feature
                 </h3>
-                <div className="d-flex align-items-center gap-3">
-                  <span className="cs_feature_icon cs_center cs_radius_12 cs_mb_0 cs_bg_1">
-                    <img src={data.iconSrc} alt={data.iconAlt} />
-                  </span>
+                <div>
                   <div>
                     <div className="cs_fs_14 cs_heading_color">BiosureLab</div>
                     <div className="cs_fs_18 cs_semibold">{data.heroTitle}</div>

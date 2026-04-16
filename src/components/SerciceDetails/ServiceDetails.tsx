@@ -18,18 +18,6 @@ const ServiceDetails = ({ data }: { data: ServiceDetailsRecord }) => {
               <li key={index}>{item}</li>
             ))}
           </ul>
-          <div className="row cs_row_gap_30 cs_gap_y_30 cs_mb_32">
-            <div className="col-md-6">
-              <div className="cs_radius_20">
-                <img src={data.galleryImages[0].src} alt={data.galleryImages[0].alt} />
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="cs_radius_20">
-                <img src={data.galleryImages[1].src} alt={data.galleryImages[1].alt} />
-              </div>
-            </div>
-          </div>
           <p>{data.outroParagraphs[0]}</p>
           <p>{data.outroParagraphs[1]}</p>
         </div>

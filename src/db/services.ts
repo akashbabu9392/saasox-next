@@ -9,7 +9,6 @@ export type ServiceDetailsRecord = {
   sectionHeading: string;
   sectionParagraph: string;
   bulletPoints: string[];
-  galleryImages: Array<{ src: string; alt: string }>;
   outroParagraphs: string[];
 };
 
@@ -35,10 +34,6 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
       "Auto sample IDs with configurable patterns",
       "Clear status progression from intake through completion",
       "Consistent records for internal QA and inspections",
-    ],
-    galleryImages: [
-      { src: "/assets/img/service_img-2.jpg", alt: "Chain of custody details view" },
-      { src: "/assets/img/service_img-3.jpg", alt: "Chain of custody list view" },
     ],
     outroParagraphs: [
       "When CoC is digital and structured, everything downstream becomes faster: results entry, approvals, reporting, and client delivery.",
@@ -67,10 +62,6 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
       "Results stay linked to the originating CoC and sample ID",
       "Ready-to-report data with minimal formatting overhead",
     ],
-    galleryImages: [
-      { src: "/assets/img/service_img-2.jpg", alt: "Results entry screen" },
-      { src: "/assets/img/service_img-3.jpg", alt: "Organism identification view" },
-    ],
     outroParagraphs: [
       "Standardized result capture makes trending and reporting reliable — because the data is consistent from day one.",
       "Keep your workflow focused on lab work, not document management.",
@@ -97,10 +88,6 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
       "Trending and floor plans included where needed",
       "Consistent structure across all clients",
       "Faster review cycles and fewer formatting errors",
-    ],
-    galleryImages: [
-      { src: "/assets/img/service_img-2.jpg", alt: "Generated PDF report" },
-      { src: "/assets/img/service_img-3.jpg", alt: "Report signing workflow" },
     ],
     outroParagraphs: [
       "When reporting is generated from structured data, your team spends time validating results — not formatting documents.",
@@ -129,10 +116,6 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
       "Clear history across sampling events",
       "Faster client response times",
     ],
-    galleryImages: [
-      { src: "/assets/img/service_img-2.jpg", alt: "Client portal reports" },
-      { src: "/assets/img/service_img-3.jpg", alt: "Client portal trends" },
-    ],
     outroParagraphs: [
       "A client portal scales with your lab. As you onboard more clients, self-service keeps support overhead low.",
       "Deliver a modern client experience without adding another paid module.",
@@ -159,10 +142,6 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
       "Consistent trending built from structured results",
       "Faster investigations with complete context",
       "Better visibility for QA and management",
-    ],
-    galleryImages: [
-      { src: "/assets/img/service_img-2.jpg", alt: "Trending view" },
-      { src: "/assets/img/service_img-3.jpg", alt: "Historical sampling comparisons" },
     ],
     outroParagraphs: [
       "When trending is integrated into the workflow, it becomes a daily tool — not a quarterly spreadsheet project.",
@@ -191,10 +170,6 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
       "Less status-chasing across teams",
       "More predictable turnaround times",
     ],
-    galleryImages: [
-      { src: "/assets/img/service_img-2.jpg", alt: "Notification preferences" },
-      { src: "/assets/img/service_img-3.jpg", alt: "In-app alerts" },
-    ],
     outroParagraphs: [
       "Real-time updates reduce bottlenecks and keep your workflow moving — especially when volume increases.",
       "Pair notifications with structured statuses to make progress visible without extra meetings or spreadsheets.",
@@ -222,10 +197,6 @@ export const serviceDetailsDb: ServiceDetailsRecord[] = [
       "Donec at augue ante Nam posuere mauris",
       "Lorem ipsum dolor sit amet, consectetur",
       "quis pretium elit placerat id Fusce egestas",
-    ],
-    galleryImages: [
-      { src: "/assets/img/service_img-2.jpg", alt: "Service image" },
-      { src: "/assets/img/service_img-3.jpg", alt: "Service image" },
     ],
     outroParagraphs: [
       "Nam posuere mauris enim, quis pretium elit placerat id  Fusce egestas nisi vel ipsum vehicula facilisis In pulvinar imperdiet venenatis  className aptent taciti sociosqu ad litora torent per conubia nostra, per inceptos himenaeos. Donec eu pulvinar lorem. Etiam vestibulum ligula quis nisl feugiat, consectetur placerat augue vestibulum  Nulla aliquam elit eu diam pharetra.Nam posuere mauris enim, ",
