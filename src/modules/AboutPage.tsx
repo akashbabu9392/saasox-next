@@ -4,7 +4,6 @@ import Feature4 from "@/components/Feature/Feature4";
 import Analysis1 from "@/components/Analysis/Analysis1";
 import Counter1 from "@/components/Counter/Counter1";
 import Story1 from "@/components/Story/Story1";
-import Testimonial4 from "@/components/Testimonial/Testimonial4";
 
 const AboutPage = () => {
   return (
@@ -15,7 +14,7 @@ const AboutPage = () => {
       <Analysis1 />
       <Counter1 />
       <Story1 />
-      <Testimonial4 />
+      <div className="cs_height_120 cs_height_lg_80"></div>
     </div>
   );
 };
