@@ -5071,6 +5071,13 @@ hr {
   opacity: 0;
 }
 
+.cs_use_case_card_desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .cs_iconbox.cs_style_5 .cs_iconbox_icon {
   width: 83px;
   height: 60px;
