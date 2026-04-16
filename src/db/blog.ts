@@ -212,8 +212,9 @@ export const blogDb: BlogPostRecord[] = [
     metaTitle: "The Hidden Cost of Running Your Lab on Spreadsheets",
     metaDescription:
       "Excel feels free until you factor labor, rework, and compliance risk.",
-    bannerImageSrc: "/assets/img/post-img-6.jpg",
-    bannerImageAlt: "Spreadsheets",
+    bannerImageSrc:
+      "/close-up-of-scientific-micropipette-and-instrument-2026-01-08-02-35-58-utc (1).JPG",
+    bannerImageAlt: "Scientific micropipette and laboratory instruments",
     postedDay: "30",
     postedMonth: "Jan",
     postedYear: "2026",
@@ -278,8 +279,9 @@ export const blogDb: BlogPostRecord[] = [
     metaTitle: "How to Read Historical Trending in Environmental Monitoring",
     metaDescription:
       "Z-scores, action levels, alert levels, and trending charts explained.",
-    bannerImageSrc: "/assets/img/post-img-1.jpg",
-    bannerImageAlt: "Trending charts",
+    bannerImageSrc:
+      "/modern-research-lab-with-computers-and-laboratory-2026-03-25-08-20-01-utc.jpg",
+    bannerImageAlt: "Modern research laboratory with computers and instruments",
     postedDay: "15",
     postedMonth: "Jan",
     postedYear: "2026",

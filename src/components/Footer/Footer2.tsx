@@ -13,7 +13,7 @@ const Footer2 = () => {
                 <i className="bi bi-geo-alt-fill"></i>
               </span>
               <div className="cs_location_info cs_fs_18 text-center">
-                <p className="cs_fs_14 cs_theme_color_4 mb-0">ADDRESS</p>
+                <p className="cs_fs_14 cs_theme_color_4 mb-0">{coreQcContact.officeLabel}</p>
                 <p className="cs_white_color mb-0">{coreQcContact.address}</p>
               </div>
             </li>
@@ -22,7 +22,7 @@ const Footer2 = () => {
                 <i className="bi bi-envelope-fill"></i>
               </span>
               <div className="cs_location_info cs_fs_18 text-center">
-                <p className="cs_fs_14 cs_theme_color_4 mb-0">EMAIL</p>
+                <p className="cs_fs_14 cs_theme_color_4 mb-0">{coreQcContact.emailLabel}</p>
                 <a href={`mailto:${coreQcContact.email}`} aria-label="Send mail link">
                   {coreQcContact.email}
                 </a>

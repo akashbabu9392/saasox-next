@@ -24,6 +24,8 @@ export const coreQcBrand = {
 export const coreQcContact = {
   phone: "+208-555-0112",
   phoneTel: "+2085550112",
-  email: "info@biosure.com",
-  address: "United States",
+  email: "info@biosurelab.com",
+  address: "144 Cramerton dr, Holly Springs, NC - 27540",
+  officeLabel: "OFFICE",
+  emailLabel: "EMAIL",
 } as const;

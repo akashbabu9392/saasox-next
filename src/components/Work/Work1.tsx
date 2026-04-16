@@ -6,7 +6,7 @@ const Work1 = () => {
       <div className="container">
         <div className="row cs_gap_y_40 position-relative z-1">
           <div className="col-lg-6 order-lg-2">
-            <div className="cs_workink_process_heading cs_center_column position-relative">
+            <div className="cs_workink_process_heading cs_center_column position-relative cs_simple_workflow">
               <div className="cs_section_heading cs_style_1 cs_mb_11 z-1">
                 <div className="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
                   <img src="/assets/img/icons/star-1.svg" alt="" />
@@ -16,7 +16,7 @@ const Work1 = () => {
                 <h2 className="cs_section_title cs_fs_48 cs_semibold wow fadeInUp">From Sample Intake to Signed Report in Minutes</h2>
                 <p className="cs_card_desc cs_mb_22">our platform maps directly to how your lab already works — just without the paper.</p>
               </div>
-              <div className="cs_process_thumbnail z-1">
+              <div className="cs_process_thumbnail z-1 cs_simple_workflow_thumbnail">
                 <img src="/chemist-using-touchpad.jpg" alt="Technician entering lab data on tablet" />
               </div>
               <div className="cs_vector_shape position-absolute bottom-0 start-0">

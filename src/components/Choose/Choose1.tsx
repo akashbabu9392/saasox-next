@@ -11,8 +11,11 @@ const Choose1 = () => {
         <div className="cs_card cs_style_1 cs_type_4">
           <div className="row cs_gap_y_50 position-relative z-1">
             <div className="col-lg-6 order-lg-2">
-              <div className="cs_card_thumbnail">
-                <img src="/pexels-tima-miroshnichenko-9574502.jpg" alt="Lab staff working at workstation" />
+              <div className="cs_card_thumbnail cs_get_started_thumbnail">
+                <img
+                  src="/research-team-gives-itself-high-five-after-success-2026-04-13-02-07-32-utc.jpg"
+                  alt="Lab researchers collaborating in a lab"
+                />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">
