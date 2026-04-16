@@ -13,7 +13,7 @@ const Choose1 = () => {
             <div className="col-lg-6 order-lg-2">
               <div className="cs_card_thumbnail cs_get_started_thumbnail">
                 <img
-                  src="/research-team-gives-itself-high-five-after-success-2026-04-13-02-07-32-utc.jpg"
+                  src="/webp/research-team-gives-itself-high-five-after-success-2026-04-13-02-07-32-utc.webp"
                   alt="Lab researchers collaborating in a lab"
                 />
               </div>

@@ -6,7 +6,7 @@ import VideoModal from '../VideoModal/VideoModal';
 
 const Story1 = () => {
 
-        const bgImage = '/biochemistry-health-care-scientist-testing-blood-sample-using-micropipette.jpg';
+        const bgImage = '/webp/biochemistry-health-care-scientist-testing-blood-sample-using-micropipette.webp';
 
         const [iframeSrc, setIframeSrc] = useState('about:blank');
         const [toggle, setToggle] = useState(false);

@@ -7,7 +7,7 @@ const Analysis1 = () => {
           <div className="row cs_gap_y_50 position-relative z-1">
             <div className="col-lg-6">
               <div className="cs_card_thumbnail position-relative">
-                <img src="/female-scientist-looking-through-microscope-research-laboratory-smoking-blue-liquid-test-tubes.jpg" alt="Scientist using microscope in controlled lab" />
+                <img src="/webp/female-scientist-looking-through-microscope-research-laboratory-smoking-blue-liquid-test-tubes.webp" alt="Scientist using microscope in controlled lab" />
               </div>
             </div>
             <div className="col-lg-6">

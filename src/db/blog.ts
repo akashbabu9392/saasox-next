@@ -27,7 +27,7 @@ export const blogDb: BlogPostRecord[] = [
     metaTitle: "USP 797 Revised Standards: What Your Lab Needs to Know in 2026",
     metaDescription:
       "The 2023 revision to USP Chapter 797 significantly expanded environmental monitoring requirements.",
-    bannerImageSrc: "/confident-asian-microbiologist-posing-photography.jpg",
+    bannerImageSrc: "/webp/confident-asian-microbiologist-posing-photography.webp",
     bannerImageAlt: "Microbiologist in lab setting",
     postedDay: "15",
     postedMonth: "Mar",
@@ -97,7 +97,7 @@ export const blogDb: BlogPostRecord[] = [
     metaTitle: "Why Your Pharmacy Clients Keep Calling (And How to Fix It)",
     metaDescription:
       "The average environmental monitoring lab fields 15–20 status inquiry calls per week from pharmacy QA managers.",
-    bannerImageSrc: "/female-scientist-typing-her-computer-data-from-last-scientific-tests-chemistry-lab.jpg",
+    bannerImageSrc: "/webp/female-scientist-typing-her-computer-data-from-last-scientific-tests-chemistry-lab.webp",
     bannerImageAlt: "Scientist typing at computer in lab",
     postedDay: "28",
     postedMonth: "Feb",
@@ -155,7 +155,7 @@ export const blogDb: BlogPostRecord[] = [
     metaTitle: "Chain of Custody Best Practices for USP 797 Labs",
     metaDescription:
       "A proper chain of custody is the foundation of defensible test results.",
-    bannerImageSrc: "/close-up-hand-writing-notes.jpg",
+    bannerImageSrc: "/webp/close-up-hand-writing-notes.webp",
     bannerImageAlt: "Hands writing lab notes on clipboard",
     postedDay: "12",
     postedMonth: "Feb",
@@ -213,7 +213,7 @@ export const blogDb: BlogPostRecord[] = [
     metaDescription:
       "Excel feels free until you factor labor, rework, and compliance risk.",
     bannerImageSrc:
-      "/close-up-of-scientific-micropipette-and-instrument-2026-01-08-02-35-58-utc (1).JPG",
+      "/webp/close-up-of-scientific-micropipette-and-instrument-2026-01-08-02-35-58-utc (1).webp",
     bannerImageAlt: "Scientific micropipette and laboratory instruments",
     postedDay: "30",
     postedMonth: "Jan",
@@ -280,7 +280,7 @@ export const blogDb: BlogPostRecord[] = [
     metaDescription:
       "Z-scores, action levels, alert levels, and trending charts explained.",
     bannerImageSrc:
-      "/modern-research-lab-with-computers-and-laboratory-2026-03-25-08-20-01-utc.jpg",
+      "/webp/modern-research-lab-with-computers-and-laboratory-2026-03-25-08-20-01-utc.webp",
     bannerImageAlt: "Modern research laboratory with computers and instruments",
     postedDay: "15",
     postedMonth: "Jan",

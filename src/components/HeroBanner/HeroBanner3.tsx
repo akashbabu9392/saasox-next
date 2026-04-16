@@ -14,7 +14,7 @@ const HeroBanner3 = () => {
                 <div className="cs_hero_lab_card" aria-hidden="true">
                   <img
                     className="cs_hero_lab_card_img"
-                    src="/asian-male-and-female-scientis-work-together-in-th-2026-01-09-11-45-05-utc.jpg"
+                    src="/webp/asian-male-and-female-scientis-work-together-in-th-2026-01-09-11-45-05-utc.webp"
                     alt="Scientist using tablet in lab"
                   />
                   <div className="cs_hero_lab_card_overlay" />

@@ -12,7 +12,7 @@ const Feature4 = () => {
               <div className="cs_card_thumbnail">
                 <img
                   className="cs_about_story_image"
-                  src="/scientist-using-computer-in-lab-2026-01-09-09-15-50-utc.jpg"
+                  src="/webp/scientist-using-computer-in-lab-2026-01-09-09-15-50-utc.webp"
                   alt="Scientist working in a laboratory"
                 />
               </div>

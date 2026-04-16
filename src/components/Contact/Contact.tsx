@@ -2,7 +2,7 @@ import { coreQcContact } from "@/config/coreqc/brand";
 
 const Contact = () => {
 
-    const bgImage = "/contact-img-1.jpg";
+    const bgImage = "/webp/contact-img-1.webp";
 
     return (
         <div>
