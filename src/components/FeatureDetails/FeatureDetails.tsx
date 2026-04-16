@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FeatureDetailsRecord } from "@/db/features";
+import { coreQcBrand } from "@/config/coreqc";
 
 const FeatureDetails = ({ data }: { data: FeatureDetailsRecord }) => {
   return (
@@ -15,7 +16,7 @@ const FeatureDetails = ({ data }: { data: FeatureDetailsRecord }) => {
                 </h3>
                 <div>
                   <div>
-                    <div className="cs_fs_14 cs_heading_color">BiosureLab</div>
+                    <div className="cs_fs_14 cs_heading_color">{coreQcBrand.name}</div>
                     <div className="cs_fs_18 cs_semibold">{data.heroTitle}</div>
                   </div>
                 </div>
@@ -80,16 +81,20 @@ const FeatureDetails = ({ data }: { data: FeatureDetailsRecord }) => {
                 </Link>
               </div>
 
-              <h3 className="cs_fs_24 cs_semibold cs_mb_12">Overview</h3>
-              <p>{data.overview}</p>
+              <div className="cs_card cs_style_1 cs_gray_bg_2 cs_radius_20 p-6">
+                <h3 className="cs_fs_24 cs_semibold cs_mb_12">Overview</h3>
+                <p className="mb-0">{data.overview}</p>
+              </div>
 
               <div className="cs_height_20"></div>
               <h3 className="cs_fs_24 cs_semibold cs_mb_12">Key Capabilities</h3>
-              <div className="d-flex flex-column gap-3">
+              <div className="row cs_row_gap_30 cs_gap_y_30">
                 {data.keyCapabilities.map((cap) => (
-                  <div key={cap.title} className="cs_service_item cs_radius_15 cs_gray_bg_2 p-4">
-                    <h4 className="cs_service_title cs_fs_20 cs_semibold cs_mb_8">{cap.title}</h4>
-                    <p className="mb-0">{cap.description}</p>
+                  <div key={cap.title} className="col-md-6">
+                    <div className="cs_card cs_style_1 cs_gray_bg_2 cs_radius_20 p-4 h-100">
+                      <h4 className="cs_fs_20 cs_semibold cs_mb_8">{cap.title}</h4>
+                      <p className="mb-0">{cap.description}</p>
+                    </div>
                   </div>
                 ))}
               </div>

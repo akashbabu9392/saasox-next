@@ -1732,6 +1732,26 @@ textarea {
   background-color: #F5F5F5;
 }
 
+/* Modern depth for feature detail content cards */
+.cs_card.cs_style_1.cs_gray_bg_2 {
+  border: 1px solid rgba(216, 221, 225, 0.9);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02), 0 12px 40px rgba(1, 50, 40, 0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.cs_card.cs_style_1.cs_gray_bg_2:hover {
+  transform: translateY(-4px);
+  border-color: rgba(115, 65, 241, 0.35);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02), 0 22px 60px rgba(1, 50, 40, 0.12);
+}
+
+.cs_card.cs_style_1.cs_gray_bg_2:focus-within {
+  border-color: rgba(115, 65, 241, 0.55);
+  box-shadow: 0 0 0 3px rgba(115, 65, 241, 0.15), 0 22px 60px rgba(1, 50, 40, 0.12);
+}
+
 .cs_gray_bg_3::before {
   content: "";
   width: 100%;
@@ -5987,6 +6007,21 @@ hr {
 .cs_feature_item {
   padding: 30px;
   border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(245, 247, 250, 0.9), rgba(255, 255, 255, 1));
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+
+.cs_feature_item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(115, 65, 241, 0.28);
+  box-shadow: 0 14px 40px rgba(1, 50, 40, 0.14);
+}
+
+.cs_feature_item:focus-within {
+  border-color: rgba(115, 65, 241, 0.45);
+  box-shadow: 0 0 0 3px rgba(115, 65, 241, 0.15);
 }
 .cs_feature_item .cs_feature_icon {
   width: 60px;

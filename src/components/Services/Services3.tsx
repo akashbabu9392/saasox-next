@@ -1,10 +1,27 @@
-import ServiceCard1 from '../Card/ServiceCard1';
-import { featureDetailsDb } from '@/db/features';
+import ServiceCard1 from "../Card/ServiceCard1";
+import { featureDetailsDb, getFeatureDetailsBySlug } from "@/db/features";
+import { uiText } from "@/constants/ui";
 
 const Services3 = () => {
+  const bgImage = "/assets/img/feature-item-bg.svg";
 
-           const bgImage = '/assets/img/feature-item-bg.svg';
-           const featureHrefBySlug = (slug: string) => `/features/${slug}`;
+  const bgBySlug: Record<string, string> = {
+    "chain-of-custody": "cs_bg_1",
+    "sample-testing-results": "cs_bg_2",
+    "pdf-report-generator": "cs_bg_3",
+    "client-portal": "cs_bg_1",
+    "scheduling-calendar": "cs_bg_2",
+    "role-based-access-control": "cs_bg_3",
+  };
+
+  const featureSlugs = [
+    "chain-of-custody",
+    "sample-testing-results",
+    "pdf-report-generator",
+    "client-portal",
+    "scheduling-calendar",
+    "role-based-access-control",
+  ] as const;
 
     return (
  <section className="position-relative">
@@ -25,83 +42,27 @@ const Services3 = () => {
             <h3 className="cs_fs_36 cs_semibold cs_white_color cs_mb_40">One platform: CoC → results → <br/> PDF → portal</h3>
           </div>
 
-          <ServiceCard1
-            addclass="cs_bg_00"
-            serviceicon="/assets/img/icons/code-icon.svg"
-            title="Chain of Custody (CoC)"
-            featureList={[
-                "Digital CoC creation and submission",
-                "Draft → Submitted lifecycle",
-                "Sample locations & media lot tracking",
-            ]}
-            btnname="Read More"
-            btnurl={featureHrefBySlug(featureDetailsDb[0]?.slug ?? "chain-of-custody")}
-          ></ServiceCard1>
+          {featureSlugs.map((slug) => {
+            const data =
+              getFeatureDetailsBySlug(slug) ??
+              featureDetailsDb.find((f) => f.slug === slug) ??
+              null;
+            if (!data) return null;
 
-          <ServiceCard1
-            addclass="cs_bg_1"
-            serviceicon="/assets/img/icons/cloud-computing.svg"
-            title="Sample Testing & Results"
-            featureList={[
-                "CFU entry and organism identification",
-                "Plate images and incubation parameters",
-                "Alert/action evaluation per sample",
-            ]}
-            btnname="Read More"
-            btnurl={featureHrefBySlug("sample-testing-results")}
-          ></ServiceCard1>
+            const shortBullets = data.keyCapabilities.slice(0, 3).map((cap) => cap.title);
 
-          <ServiceCard1
-            addclass="cs_bg_2"
-            serviceicon="/assets/img/icons/quality-assurance.svg"
-            title="One-Click PDF Report Generator"
-            featureList={[
-                "Automated PDF from CoC + results",
-                "Versioning and approval workflow",
-                "Historical trending and floor plans",
-            ]}
-            btnname="Read More"
-            btnurl={featureHrefBySlug("pdf-report-generator")}
-          ></ServiceCard1>
-
-          <ServiceCard1
-            addclass="cs_bg_3"
-            serviceicon="/assets/img/icons/security.svg"
-            title="Free Client Portal"
-            featureList={[
-                "Self-service report access",
-                "Threaded comments and notifications",
-                "Always free on all plans",
-            ]}
-            btnname="Read More"
-            btnurl={featureHrefBySlug("client-portal")}
-          ></ServiceCard1>
-
-          <ServiceCard1
-            addclass="cs_bg_00"
-            serviceicon="/assets/img/icons/advanced-tracking.svg"
-            title="Scheduling & Calendar"
-            featureList={[
-                "Recurring submission schedules",
-                "Calendar view and status history",
-                "Client-visible schedules",
-            ]}
-            btnname="Read More"
-            btnurl={featureHrefBySlug("scheduling-calendar")}
-          ></ServiceCard1>
-
-          <ServiceCard1
-            addclass="cs_bg_1"
-            serviceicon="/assets/img/icons/analytics.svg"
-            title="Role-Based Access Control"
-            featureList={[
-                "Five roles with granular permissions",
-                "Audit trail and activity logs",
-                "Encryption in transit and at rest",
-            ]}
-            btnname="Read More"
-            btnurl={featureHrefBySlug("role-based-access-control")}
-          ></ServiceCard1>
+            return (
+              <ServiceCard1
+                key={data.slug}
+                addclass={bgBySlug[slug] ?? ""}
+                serviceicon={data.iconSrc}
+                title={data.heroTitle}
+                featureList={shortBullets}
+                btnname={uiText.actions.readMore}
+                btnurl={`/features/${data.slug}`}
+              />
+            );
+          })}
 
         </div>
       </div>
