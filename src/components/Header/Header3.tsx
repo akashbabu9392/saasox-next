@@ -11,12 +11,19 @@ import { coreQcNav } from "@/config/coreqc";
 const MOBILE_NAV_MQ = "(max-width: 1199px)";
 
 export default function Header3({ variant }:{ variant?: string }) {
-  const [mobileToggle, setMobileToggle] = useState(false);
+  const [mobileNavOpenForPath, setMobileNavOpenForPath] = useState<string | null>(
+    null
+  );
   const [isSticky, setIsSticky] = useState<string>("");
   const prevScrollRef = useRef(0);
   const [isMobileNav, setIsMobileNav] = useState(false);
   const pathname = usePathname();
   const shouldShowSignIn = pathname === "/";
+  const mobileToggle = mobileNavOpenForPath === pathname;
+
+  const setMobileToggle = (value: boolean) => {
+    setMobileNavOpenForPath(value ? pathname : null);
+  };
 
   useEffect(() => {
     const mq = window.matchMedia(MOBILE_NAV_MQ);
@@ -62,10 +69,6 @@ export default function Header3({ variant }:{ variant?: string }) {
       document.body.style.overflow = prev;
     };
   }, [mobileToggle, isMobileNav]);
-
-  useEffect(() => {
-    setMobileToggle(false);
-  }, [pathname]);
 
   return (
     <div>

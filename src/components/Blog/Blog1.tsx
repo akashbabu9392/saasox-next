@@ -1,48 +1,42 @@
 'use client';
 
 import Slider from "@/app/_client/SlickSlider";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef } from "react";
 import Link from "next/link";
 import { blogDb } from "@/db/blog";
 import type { SlickSliderRef } from "@/app/_client/SlickSlider";
 import "./blog-insights.css";
 
 const Blog1 = () => {
-        const [sliderKey, setSliderKey] = useState(0);
-        useEffect(() => {
-          setSliderKey((k) => k + 1);
-        }, []);
-
         const settings = {
         dots: false,
         infinite: true,
         speed: 2000,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 4000,
-        mobileFirst: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 1200,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
               adaptiveHeight: true,
-            }
+            },
           },
           {
-            breakpoint: 1200,
+            breakpoint: 768,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1,
               slidesToScroll: 1,
               adaptiveHeight: true,
-            }
-          }
-        ]
+            },
+          },
+        ],
       };  
 
       const sliderRef = useRef<SlickSliderRef | null>(null);
@@ -97,7 +91,7 @@ const Blog1 = () => {
         </div>
         <div className="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="1" data-md-slides="2" data-lg-slides="3" data-add-slides="3">
           <div className="cs_slider_wrapper cs_slider_gap_301">
-            <Slider key={sliderKey} ref={sliderRef} {...settings}>
+            <Slider ref={sliderRef} {...settings}>
             {blogContent.map((item, i) => {
             const postHref = `/blog/${item.slug}`;
             return (
