@@ -12,7 +12,7 @@ import HeroBanner3 from "@/components/HeroBanner/HeroBanner3";
 
 const Home = () => {
     return (
-        <div>
+        <div className="cs_homepage">
             <HeroBanner3></HeroBanner3>
             <Brand1></Brand1>
             <Services1></Services1>
