@@ -10,5 +10,13 @@ export const coreQcNav = {
   aboutLabel: "About",
   contactLabel: "Contact",
   contactHref: "/contact",
-  signInHref: "/contact",
 } as const;
+
+export function getCoreQcNavLinkItems(): { href: string; label: string }[] {
+  return [
+    { href: coreQcNav.homeVersions[0]?.href ?? "/", label: coreQcNav.homeLabel },
+    ...coreQcNav.primaryLinks.map((item) => ({ href: item.href, label: item.label })),
+    { href: "/about", label: coreQcNav.aboutLabel },
+    { href: coreQcNav.contactHref, label: coreQcNav.contactLabel },
+  ];
+}

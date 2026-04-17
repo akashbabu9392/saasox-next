@@ -1,37 +1,71 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Nav from './Nav';
+import MobileNavOverlay from "./MobileNavOverlay";
 import { coreQcBrand } from "@/config/coreqc";
 import { coreQcNav } from "@/config/coreqc";
+
+const MOBILE_NAV_MQ = "(max-width: 1199px)";
+
 export default function Header3({ variant }:{ variant?: string }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState<string>("");
-  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  const prevScrollRef = useRef(0);
+  const [isMobileNav, setIsMobileNav] = useState(false);
   const pathname = usePathname();
   const shouldShowSignIn = pathname === "/";
 
   useEffect(() => {
+    const mq = window.matchMedia(MOBILE_NAV_MQ);
+    const sync = () => setIsMobileNav(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollPos) {
-        setIsSticky('cs-gescout_sticky'); 
-      } else if (currentScrollPos !== 0) {
-        setIsSticky('cs-gescout_show cs-gescout_sticky');
+      const mobile = window.matchMedia(MOBILE_NAV_MQ).matches;
+      if (mobile) {
+        setIsSticky(
+          currentScrollPos > 0 ? "cs-gescout_show cs-gescout_sticky" : ""
+        );
       } else {
-        setIsSticky('');
+        if (currentScrollPos > prevScrollRef.current) {
+          setIsSticky("cs-gescout_sticky");
+        } else if (currentScrollPos !== 0) {
+          setIsSticky("cs-gescout_show cs-gescout_sticky");
+        } else {
+          setIsSticky("");
+        }
       }
-      setPrevScrollPos(currentScrollPos);
+      prevScrollRef.current = currentScrollPos;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, []);
+
+  useEffect(() => {
+    if (!mobileToggle || !isMobileNav) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [mobileToggle, isMobileNav]);
+
+  useEffect(() => {
+    setMobileToggle(false);
+  }, [pathname]);
 
   return (
     <div>
@@ -88,6 +122,13 @@ export default function Header3({ variant }:{ variant?: string }) {
         </div>
       </div>
     </header>
+
+    {isMobileNav && (
+      <MobileNavOverlay
+        open={mobileToggle}
+        onClose={() => setMobileToggle(false)}
+      />
+    )}
 
     </div>
 
