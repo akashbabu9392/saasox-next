@@ -3653,6 +3653,24 @@ hr {
 .cs_footer.cs_style_1 .cs_location_list a:hover {
   color: var(--theme-color-4);
 }
+@media (max-width: 767px) {
+  .cs_footer.cs_style_1 .cs_location_list {
+    justify-content: center;
+    gap: 18px 24px;
+  }
+  .cs_footer.cs_style_1 .cs_location_list li {
+    width: 100%;
+    max-width: 520px;
+    align-items: flex-start;
+  }
+  .cs_footer.cs_style_1 .cs_location_list .cs_location_info {
+    text-align: left;
+  }
+  .cs_footer.cs_style_1 .cs_location_list .cs_location_info a {
+    display: inline-block;
+    word-break: break-word;
+  }
+}
 .cs_footer.cs_style_1.cs_type_1 .cs_footer_top {
   padding: 35px 0 39px;
 }
@@ -4683,9 +4701,28 @@ hr {
 }
 .cs_card.cs_style_1.cs_type_3 .cs_card_thumbnail {
   padding-left: 0;
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.cs_card.cs_style_1.cs_type_3 .cs_card_thumbnail > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 .cs_card.cs_style_1.cs_type_3 .cs_card_content {
   padding-left: 30px;
+}
+@media (max-width: 991px) {
+  .cs_card.cs_style_1.cs_type_3 .cs_card_thumbnail {
+    margin-bottom: 24px;
+  }
 }
 .cs_card.cs_style_1.cs_type_4 .cs_card_thumbnail {
   height: 100%;
@@ -4725,17 +4762,31 @@ hr {
   .cs_card.cs_style_1.cs_type_4 .cs_get_started_thumbnail {
     max-width: 100%;
     margin-right: auto;
+    margin-bottom: 0;
+  }
+  .cs_card.cs_style_1.cs_type_4 .cs_card_content {
+    margin-top: 16px;
   }
 }
 .cs_card.cs_style_1.cs_type_4 .cs_card_content {
   padding-left: 0;
   padding-bottom: 120px;
 }
+@media (max-width: 991px) {
+  .cs_card.cs_style_1.cs_type_4 .cs_card_content {
+    padding-bottom: 24px;
+  }
+}
 .cs_card.cs_style_1.cs_type_4 .cs_section_subtitle::after {
   background-color: var(--accent-color);
 }
 .cs_card.cs_style_1.cs_type_4 .cs_btn.cs_style_1 {
   margin-top: 44px;
+}
+@media (max-width: 991px) {
+  .cs_card.cs_style_1.cs_type_4 .cs_btn.cs_style_1 {
+    margin-top: 16px;
+  }
 }
 .cs_card.cs_style_1.cs_type_5 .cs_card_content {
   padding-left: 0;
@@ -6178,6 +6229,14 @@ hr {
 }
 .cs_counter.cs_style_1.cs_type_1 {
   padding: 48px 0 51px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 991px) {
+  .cs_counter.cs_style_1.cs_type_1 {
+    padding: 24px 0 28px;
+  }
 }
 @media (max-width: 1199px) {
   .cs_counter.cs_style_1 {
@@ -6490,9 +6549,19 @@ hr {
   }
   .cs_toolset_content .cs_iconbox.cs_style_3 {
     position: initial;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
   }
   .cs_toolset_content.cs_type_1 .cs_iconbox.cs_style_3 {
     position: initial;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
   }
 }
 

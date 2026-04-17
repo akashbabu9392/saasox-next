@@ -41,13 +41,12 @@ const Choose1 = () => {
                 <span className="cs_btn_icon"><i className="bi bi-arrow-right"></i></span>
                 </Link>
                 </div>
-                <p className="cs_fs_13 cs_white_color mt-3 mb-0 opacity-75">Setup in 1 day</p>
+                <p className="cs_fs_13 cs_white_color mt-1 sm:mt-3 mb-0 opacity-75">Setup in 1 day</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="cs_height_0 cs_height_lg_80"></div>
     </section>
     );
 };
