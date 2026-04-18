@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import BreadCumb from "@/components/Common/BreadCumb";
 import UseCaseDetails from "@/components/UseCaseDetails/UseCaseDetails";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 import { getUseCaseDetailsBySlug, useCaseDetailsDb } from "@/db/use-cases";
 
 export function generateStaticParams() {
@@ -41,7 +42,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           { label: data.breadcrumbTitle },
         ]}
       />
-      <UseCaseDetails data={data} />
+      <ScrollReveal><UseCaseDetails data={data} /></ScrollReveal>
     </div>
   );
 }

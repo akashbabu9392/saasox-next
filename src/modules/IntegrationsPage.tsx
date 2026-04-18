@@ -1,5 +1,6 @@
 import BreadCumb from "@/components/Common/BreadCumb";
 import IntegrationsCatalog from "@/components/Integrations/IntegrationsCatalog";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 
 const IntegrationsPage = () => {
     return (
@@ -8,7 +9,7 @@ const IntegrationsPage = () => {
                 bgimg="/assets/img/page-heading-bg.svg"
                 Title="Integrations"
             ></BreadCumb>
-            <IntegrationsCatalog></IntegrationsCatalog>
+            <ScrollReveal><IntegrationsCatalog></IntegrationsCatalog></ScrollReveal>
         </div>
     );
 };

@@ -1,52 +1,75 @@
-/* Lab Management Insights: mobile responsiveness fixes */
+/* ============================================================
+   Blog1 — Embla carousel
+   Responsive: 1 card (≤767), 2 cards (768–1199), 3 cards (≥1200)
+   ============================================================ */
+
+.tp-embla {
+  overflow: hidden;
+  position: relative;
+}
+
+.tp-embla__container {
+  display: flex;
+  gap: 24px;
+  touch-action: pan-y pinch-zoom;
+}
+
+.tp-embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: flex;
+}
+
+.tp-embla__slide .cs_post.cs_style_1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .tp-embla__container { gap: 24px; }
+  .tp-embla__slide { flex: 0 0 calc(50% - 12px); }
+}
+
+@media (min-width: 1200px) {
+  .tp-embla__container { gap: 30px; }
+  .tp-embla__slide { flex: 0 0 calc(33.333% - 20px); }
+}
+
+/* Mobile polish */
 @media (max-width: 767px) {
-  .insights-blog-slider .cs_section_heading {
-    gap: 16px;
-  }
-
-  /* Override global slider gap on mobile so one card fills the viewport */
-  .insights-blog-slider.cs_slider_gap_30 .slick-slide,
-  .insights-blog-slider .cs_slider_gap_301 .slick-slide {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .insights-blog-slider.cs_slider_gap_30 .slick-list,
-  .insights-blog-slider .cs_slider_gap_301 .slick-list {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    overflow: hidden;
-  }
-
-  .insights-blog-slider .cs_slider_arrows {
-    display: none;
-  }
-
-  .insights-blog-slider .cs_slide,
-  .insights-blog-slider .cs_post {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  /* Make the card feel like other grid cards on mobile (less "giant hero" image) */
-  .insights-blog-slider .cs_post.cs_style_1 {
-    padding: 12px 12px 14px;
-  }
-
+  .insights-blog-slider .cs_section_heading { gap: 16px; }
+  .insights-blog-slider .cs_slider_arrows { display: none; }
+  .insights-blog-slider .cs_post.cs_style_1 { padding: 12px 12px 14px; }
   .insights-blog-slider .cs_post_thumbnail {
     aspect-ratio: 16 / 10;
-    max-height: clamp(150px, 44vw, 220px);
+    overflow: hidden;
   }
-
+  .insights-blog-slider .cs_post_thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
   .insights-blog-slider .cs_post_title {
     font-size: 18px;
     line-height: 1.35;
   }
-
   .insights-blog-slider .cs_post_content p.cs_fs_14 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+}
+
+/* Arrow buttons — native <button> reset */
+.insights-blog-slider .cs_slider_arrows button {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.insights-blog-slider .cs_slider_arrows button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }

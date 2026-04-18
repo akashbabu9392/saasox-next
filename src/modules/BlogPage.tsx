@@ -1,5 +1,6 @@
 import Blog5 from "@/components/Blog/Blog5";
 import BreadCumb from "@/components/Common/BreadCumb";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 
 const BlogPage = () => {
     return (
@@ -7,8 +8,8 @@ const BlogPage = () => {
               <BreadCumb
                 bgimg="/assets/img/page-heading-bg.svg"
                 Title="Resources"
-            ></BreadCumb>    
-            <Blog5></Blog5>          
+            ></BreadCumb>
+            <ScrollReveal><Blog5></Blog5></ScrollReveal>
         </div>
     );
 };

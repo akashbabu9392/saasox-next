@@ -9,22 +9,23 @@ import Toolset1 from "@/components/Toolset/Toolset1";
 import Blog1 from "@/components/Blog/Blog1";
 import Faq1 from "@/components/Faq/Faq1";
 import HeroBanner3 from "@/components/HeroBanner/HeroBanner3";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 
 const Home = () => {
     return (
         <div className="cs_homepage">
             <HeroBanner3></HeroBanner3>
-            <Brand1></Brand1>
-            <Services1></Services1>
-            <Work1></Work1>
-            <Analysis1></Analysis1>
-            <Choose1></Choose1>
-            <Counter1></Counter1>
-            <Story1></Story1>
+            <ScrollReveal><Brand1></Brand1></ScrollReveal>
+            <ScrollReveal><Services1></Services1></ScrollReveal>
+            <ScrollReveal><Work1></Work1></ScrollReveal>
+            <ScrollReveal><Analysis1></Analysis1></ScrollReveal>
+            <ScrollReveal><Choose1></Choose1></ScrollReveal>
+            <ScrollReveal><Counter1></Counter1></ScrollReveal>
+            <ScrollReveal><Story1></Story1></ScrollReveal>
             <div className="cs_height_120 cs_height_lg_80"></div>
-            <Toolset1></Toolset1>
-            <Faq1></Faq1>
-            <Blog1></Blog1>
+            <ScrollReveal><Toolset1></Toolset1></ScrollReveal>
+            <ScrollReveal><Faq1></Faq1></ScrollReveal>
+            <ScrollReveal><Blog1></Blog1></ScrollReveal>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import BreadCumb from "@/components/Common/BreadCumb";
 import { LegalDocument } from "@/components/Common/LegalDocument";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 import { privacyPolicyDocument } from "@/data/legal/privacy-policy";
 
 const PrivacyPolicyPage = () => {
@@ -11,7 +12,7 @@ const PrivacyPolicyPage = () => {
         crumbs={[{ label: "Home", href: "/" }, { label: privacyPolicyDocument.breadcrumbTitle }]}
       />
 
-      <LegalDocument
+      <ScrollReveal><LegalDocument
         doc={privacyPolicyDocument}
         heading={{
           label: "PRIVACY POLICY",
@@ -21,7 +22,7 @@ const PrivacyPolicyPage = () => {
           { label: "Terms & Conditions", href: "/terms-and-conditions" },
           { label: "Contact privacy@biosurelab.com", href: "mailto:privacy@biosurelab.com" },
         ]}
-      />
+      /></ScrollReveal>
     </div>
   );
 };

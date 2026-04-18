@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import BreadCumb from "@/components/Common/BreadCumb";
 import FeatureDetails from "@/components/FeatureDetails/FeatureDetails";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 import { featureDetailsDb, getFeatureDetailsBySlug } from "@/db/features";
 
 export function generateStaticParams() {
@@ -41,7 +42,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           { label: data.breadcrumbTitle },
         ]}
       />
-      <FeatureDetails data={data} />
+      <ScrollReveal><FeatureDetails data={data} /></ScrollReveal>
     </div>
   );
 }

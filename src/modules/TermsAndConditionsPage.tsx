@@ -1,5 +1,6 @@
 import BreadCumb from "@/components/Common/BreadCumb";
 import { LegalDocument } from "@/components/Common/LegalDocument";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 import { termsAndConditionsDocument } from "@/data/legal/terms-and-conditions";
 
 const TermsAndConditionsPage = () => {
@@ -11,7 +12,7 @@ const TermsAndConditionsPage = () => {
         crumbs={[{ label: "Home", href: "/" }, { label: termsAndConditionsDocument.breadcrumbTitle }]}
       />
 
-      <LegalDocument
+      <ScrollReveal><LegalDocument
         doc={termsAndConditionsDocument}
         heading={{
           label: "TERMS AND CONDITIONS",
@@ -21,7 +22,7 @@ const TermsAndConditionsPage = () => {
           { label: "Privacy Policy", href: "/privacy-policy" },
           { label: "Contact legal@biosurelab.com", href: "mailto:legal@biosurelab.com" },
         ]}
-      />
+      /></ScrollReveal>
     </div>
   );
 };

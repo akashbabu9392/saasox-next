@@ -1,6 +1,7 @@
 import BreadCumb from "@/components/Common/BreadCumb";
 import { useCaseDetailsDb } from "@/db/use-cases";
 import UseCasesCatalog from "@/components/UseCases/UseCasesCatalog";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 
 export default function UseCasesPage() {
   return (
@@ -22,7 +23,7 @@ export default function UseCasesPage() {
               Whether you&apos;re a small independent micro lab or a large hospital pharmacy program, our platform adapts to your specific testing workflow.
             </p>
           </div>
-          <UseCasesCatalog useCases={useCaseDetailsDb} />
+          <ScrollReveal><UseCasesCatalog useCases={useCaseDetailsDb} /></ScrollReveal>
         </div>
         <div className="cs_height_120 cs_height_lg_80"></div>
       </section>

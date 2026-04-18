@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import BreadCumb from "@/components/Common/BreadCumb";
 import BlogDetails from "@/components/BlogDetails/BlogDetails";
+import ScrollReveal from "@/components/Common/ScrollReveal";
 import { blogDb, getBlogPostBySlug } from "@/db/blog";
 
 export function generateStaticParams() {
@@ -42,7 +43,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           { label: data.breadcrumbTitle },
         ]}
       />
-      <BlogDetails data={data} />
+      <ScrollReveal><BlogDetails data={data} /></ScrollReveal>
     </div>
   );
 }
